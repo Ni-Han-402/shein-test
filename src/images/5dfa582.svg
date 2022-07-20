@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="42" height="42" viewBox="0 0 42 42">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#829bff"/>
+      <stop offset="1" stop-color="#466aff"/>
+    </linearGradient>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_73709" data-name="Rectangle 73709" width="28" height="28"/>
+    </clipPath>
+    <linearGradient id="linear-gradient-2" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#f2f4fe"/>
+    </linearGradient>
+    <clipPath id="clip-首頁_功能區_快速提現">
+      <rect width="42" height="42"/>
+    </clipPath>
+  </defs>
+  <g id="首頁_功能區_快速提現" clip-path="url(#clip-首頁_功能區_快速提現)">
+    <g id="Group_68946" data-name="Group 68946" transform="translate(18472 2585)">
+      <rect id="Rectangle_73705" data-name="Rectangle 73705" width="42" height="42" rx="8" transform="translate(-18472 -2585)" fill="url(#linear-gradient)"/>
+      <g id="我的_提现记录" transform="translate(-18465 -2578)" clip-path="url(#clip-path)">
+        <g id="Group_12254" data-name="Group 12254" transform="translate(1.167 3.501)">
+          <path id="Path_17" data-name="Path 17" d="M541.324,188.943a3.45,3.45,0,0,0-3.1-1.942H519.44a3.261,3.261,0,0,0-.4.023A3.448,3.448,0,0,0,516,190.443V201.72a3.446,3.446,0,0,0,3.443,3.443h18.783a3.449,3.449,0,0,0,3.44-3.442V190.444A3.472,3.472,0,0,0,541.324,188.943Z" transform="translate(-516 -183.25)" fill="url(#linear-gradient-2)"/>
+          <path id="Path_18" data-name="Path 18" d="M539.839,181.253H524.114a3.273,3.273,0,0,0-.394.023l.431-1.366a3.441,3.441,0,0,1,4.317-2.247Z" transform="translate(-520.671 -177.503)" fill="url(#linear-gradient-2)"/>
+          <path id="Union_150" data-name="Union 150" d="M18910.383,2619.74a.79.79,0,1,1,0-1.581h3.588a.79.79,0,1,1,0,1.581Zm-6.285,0a.79.79,0,0,1,0-1.581h3.428a.79.79,0,0,1,0,1.581Zm-9.475-10.662a.79.79,0,0,1,0-1.581h19.348a.79.79,0,1,1,0,1.581Z" transform="translate(-18891.463 -2599.8)" fill="url(#linear-gradient)"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

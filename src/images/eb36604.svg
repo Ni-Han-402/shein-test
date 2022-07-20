@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#dfa5ff"/>
+      <stop offset="1" stop-color="#b047eb"/>
+    </linearGradient>
+    <clipPath id="clip-我的_团队报表">
+      <rect width="24" height="24"/>
+    </clipPath>
+  </defs>
+  <g id="我的_团队报表" clip-path="url(#clip-我的_团队报表)">
+    <g id="business-and-finance" transform="translate(1 0.817)">
+      <path id="Path_24929" data-name="Path 24929" d="M6.5,15.6v7.364H1V15.6c0-.884.513-1.6,1.146-1.6H5.354C5.987,14,6.5,14.717,6.5,15.6Z" transform="translate(-0.083 -3.572)" fill="url(#linear-gradient)"/>
+      <path id="Path_24930" data-name="Path 24930" d="M14.5,11.6V24.087H9V11.6c0-.884.513-1.6,1.146-1.6h3.208C13.987,10,14.5,10.717,14.5,11.6Z" transform="translate(-0.75 -4.695)" fill="url(#linear-gradient)"/>
+      <path id="Path_24931" data-name="Path 24931" d="M22.5,7.6V25.21H17V7.6c0-.884.513-1.6,1.146-1.6h3.208C21.987,6,22.5,6.717,22.5,7.6Z" transform="translate(-1.417 -5.817)" fill="url(#linear-gradient)"/>
+      <path id="Path_24932" data-name="Path 24932" d="M21.313,23.9H.688a.7.7,0,0,1,0-1.4H21.313a.7.7,0,0,1,0,1.4Z" transform="translate(0 -1.712)" fill="#b34eec"/>
+    </g>
+  </g>
+</svg>

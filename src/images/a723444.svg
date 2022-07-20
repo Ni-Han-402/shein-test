@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#829bff"/>
+      <stop offset="1" stop-color="#466aff"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#b5b2ff"/>
+      <stop offset="1" stop-color="#3a4eff"/>
+    </linearGradient>
+    <clipPath id="clip-我的_提现记录">
+      <rect width="24" height="24"/>
+    </clipPath>
+  </defs>
+  <g id="我的_提现记录" clip-path="url(#clip-我的_提现记录)">
+    <g id="Group_12254" data-name="Group 12254" transform="translate(-515 -174.502)">
+      <path id="Path_17" data-name="Path 17" d="M537.706,188.665A2.957,2.957,0,0,0,535.049,187h-16.1a2.8,2.8,0,0,0-.339.02A2.955,2.955,0,0,0,516,189.951v9.666a2.954,2.954,0,0,0,2.951,2.951h16.1A2.956,2.956,0,0,0,538,199.618v-9.666A2.976,2.976,0,0,0,537.706,188.665Z" transform="translate(0 -6.283)" fill="url(#linear-gradient)"/>
+      <path id="Path_18" data-name="Path 18" d="M537.536,180.717H524.058a2.8,2.8,0,0,0-.338.02l.369-1.171a2.949,2.949,0,0,1,3.7-1.926Z" transform="translate(-5.107 0)" fill="url(#linear-gradient-2)"/>
+      <g id="Group_35" data-name="Group 35" transform="translate(518.031 184.102)">
+        <path id="Path_19" data-name="Path 19" d="M539.262,198.354H522.677a.677.677,0,1,1,0-1.354h16.585a.677.677,0,1,1,0,1.354Z" transform="translate(-522 -197)" fill="#fff"/>
+      </g>
+      <g id="Group_36" data-name="Group 36" transform="translate(531.538 193.24)">
+        <path id="Path_20" data-name="Path 20" d="M565.662,225.354h-3.077a.677.677,0,0,1,0-1.354h3.077a.677.677,0,1,1,0,1.354Z" transform="translate(-561.908 -224)" fill="#fff"/>
+      </g>
+      <g id="Group_37" data-name="Group 37" transform="translate(526.154 193.24)">
+        <path id="Path_21" data-name="Path 21" d="M549.611,225.354h-2.934a.677.677,0,1,1,0-1.354h2.934a.677.677,0,1,1,0,1.354Z" transform="translate(-546 -224)" fill="#fff"/>
+      </g>
+    </g>
+  </g>
+</svg>

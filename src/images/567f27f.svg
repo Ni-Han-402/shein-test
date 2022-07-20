@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="42" height="42" viewBox="0 0 42 42">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ee3b33"/>
+      <stop offset="1" stop-color="#f37670"/>
+    </linearGradient>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_73708" data-name="Rectangle 73708" width="28" height="28" transform="translate(-9240 -15845)" fill="#fff" stroke="#707070" strokeWidth="1"/>
+    </clipPath>
+    <clipPath id="clip-首頁_功能區_優惠活動">
+      <rect width="42" height="42"/>
+    </clipPath>
+  </defs>
+  <g id="首頁_功能區_優惠活動" clip-path="url(#clip-首頁_功能區_優惠活動)">
+    <g id="Group_68947" data-name="Group 68947" transform="translate(18472 2585)">
+      <rect id="Rectangle_73705" data-name="Rectangle 73705" width="42" height="42" rx="8" transform="translate(-18472 -2585)" fill="url(#linear-gradient)"/>
+      <g id="Mask_Group_1665" data-name="Mask Group 1665" transform="translate(-9225 13267)" clip-path="url(#clip-path)">
+        <g id="noun-gift-1420070" transform="translate(-9238.833 -15843.834)">
+          <path id="Union_149" data-name="Union 149" d="M16.521,25.668a1.569,1.569,0,0,0,.1-.537V12.764h6.262V25.131a.537.537,0,0,1-.533.537Zm-5.872,0a.537.537,0,0,1-.533-.537V6.637H9.05V11.7H.533A.534.534,0,0,1,0,11.16V6.1a.534.534,0,0,1,.533-.537H4.578A3.268,3.268,0,0,1,3.219,3.623,2.781,2.781,0,0,1,3.59,1.387,3.039,3.039,0,0,1,6.146,0,3.127,3.127,0,0,1,8.1.691a8.227,8.227,0,0,1,2.018,2.652V2.709A1.283,1.283,0,0,1,11.4,1.43h2.745a1.282,1.282,0,0,1,1.281,1.279V3.35A8.2,8.2,0,0,1,17.445.691,3.143,3.143,0,0,1,19.4,0a3.033,3.033,0,0,1,2.555,1.387,2.806,2.806,0,0,1,.375,2.236,3.264,3.264,0,0,1-1.362,1.943H25.13a.531.531,0,0,1,.534.537V11.16a.534.534,0,0,1-.534.537H16.619V6.637H15.548V25.131a.537.537,0,0,1-.534.537ZM18.113,1.525a9.7,9.7,0,0,0-2.481,4.041h3.131l1.424-.775a2.2,2.2,0,0,0,1.1-1.42,1.7,1.7,0,0,0-.228-1.4,1.966,1.966,0,0,0-1.659-.9A2.061,2.061,0,0,0,18.113,1.525ZM4.485,1.971a1.7,1.7,0,0,0-.228,1.4,2.2,2.2,0,0,0,1.1,1.42l1.424.775H9.912A9.765,9.765,0,0,0,7.431,1.525,2.051,2.051,0,0,0,6.146,1.07,1.969,1.969,0,0,0,4.485,1.971Zm-1.16,23.7a.537.537,0,0,1-.533-.537V12.764H9.05V25.131a1.569,1.569,0,0,0,.1.537Z" fill="#fff"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

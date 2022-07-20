@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <linearGradient id="linear-gradient" x1="1" x2="1" y2="1.142" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#f84f46"/>
+      <stop offset="1" stop-color="#d6160d"/>
+    </linearGradient>
+    <clipPath id="clip-我的_抢单记录">
+      <rect width="24" height="24"/>
+    </clipPath>
+  </defs>
+  <g id="我的_抢单记录" clip-path="url(#clip-我的_抢单记录)">
+    <g id="copy" transform="translate(1 1)">
+      <path id="Path_24906" data-name="Path 24906" d="M3.75,6.188A4.359,4.359,0,0,1,8.1,1.833h8.372A2.516,2.516,0,0,0,14.063,0H3.521A2.523,2.523,0,0,0,1,2.521V16.729A2.523,2.523,0,0,0,3.521,19.25H3.75Z" fill="url(#linear-gradient)"/>
+      <path id="Path_24907" data-name="Path 24907" d="M19.063,4H8.521A2.523,2.523,0,0,0,6,6.521V19.813a2.523,2.523,0,0,0,2.521,2.521H19.063a2.523,2.523,0,0,0,2.521-2.521V6.521A2.523,2.523,0,0,0,19.063,4ZM17.229,19.583H10.354a.688.688,0,0,1,0-1.375h6.875a.688.688,0,1,1,0,1.375Zm0-3.667H10.354a.687.687,0,1,1,0-1.375h6.875a.687.687,0,0,1,0,1.375Zm0-3.208H10.354a.687.687,0,1,1,0-1.375h6.875a.688.688,0,0,1,0,1.375Zm0-3.667H10.354a.687.687,0,0,1,0-1.375h6.875a.687.687,0,0,1,0,1.375Z" transform="translate(-0.417 -0.333)" fill="url(#linear-gradient)"/>
+    </g>
+  </g>
+</svg>

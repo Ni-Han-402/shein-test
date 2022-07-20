@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="42" height="42" viewBox="0 0 42 42">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fcc922"/>
+      <stop offset="1" stop-color="#fe8813"/>
+    </linearGradient>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_73548" data-name="Rectangle 73548" width="28" height="28" transform="translate(-8590 -15806)" fill="#fff" stroke="#707070" strokeWidth="1"/>
+    </clipPath>
+    <clipPath id="clip-首頁_功能區_推廣說明">
+      <rect width="42" height="42"/>
+    </clipPath>
+  </defs>
+  <g id="首頁_功能區_推廣說明" clip-path="url(#clip-首頁_功能區_推廣說明)">
+    <g id="Group_68946" data-name="Group 68946" transform="translate(18472 2585)">
+      <rect id="Rectangle_73705" data-name="Rectangle 73705" width="42" height="42" rx="8" transform="translate(-18472 -2585)" fill="url(#linear-gradient)"/>
+      <g id="Mask_Group_1583" data-name="Mask Group 1583" transform="translate(-9875 13228)" clip-path="url(#clip-path)">
+        <path id="handshake-angle" d="M19.571,7.585h-6.1v2.08A3,3,0,0,1,10.886,12.7,2.889,2.889,0,0,1,7.7,9.831V4.99l-.983.591a5.916,5.916,0,0,0-2.866,5.068L.643,12.506a1.28,1.28,0,0,0-.471,1.75L3.38,19.814a1.292,1.292,0,0,0,1.755.471l4.147-2.4H14.76a2.572,2.572,0,0,0,2.567-2.567A1.925,1.925,0,0,0,19.252,13.4V11.471h.321a.963.963,0,0,0,.963-.963V8.583A.994.994,0,0,0,19.571,7.585Zm5.924-1.468L22.288.558A1.292,1.292,0,0,0,20.534.087l-4.147,2.4H13.877a8.128,8.128,0,0,0-4.3,1.228,1.289,1.289,0,0,0-.6,1.086V9.867a1.6,1.6,0,1,0,3.208,0V6.3h7.379a2.246,2.246,0,0,1,2.246,2.246V9.69l3.208-1.855A1.237,1.237,0,0,0,25.495,6.117Z" transform="translate(-8588.834 -15802.186)" fill="#fff"/>
+      </g>
+    </g>
+  </g>
+</svg>

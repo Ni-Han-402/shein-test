@@ -1,0 +1,56 @@
+[
+    { 
+        "id": 1,
+        "name": "Shein",
+        "amount":"20 0.4",
+        "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_0bvf53qWoA2bk1_tJQWlU9GWSfNeeXZNv7T2J1_fgRRe4eOxTgYR4K6InTBmvIeR3mw&usqp=CAU"
+    },
+    { 
+        "id": 2,
+        "name": "Shein",
+        "amount":"20 0.4",
+        "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_0bvf53qWoA2bk1_tJQWlU9GWSfNeeXZNv7T2J1_fgRRe4eOxTgYR4K6InTBmvIeR3mw&usqp=CAU"
+    },
+    { 
+        "id": 3,
+        "name": "Shein",
+        "amount":"20 0.4",
+        "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_0bvf53qWoA2bk1_tJQWlU9GWSfNeeXZNv7T2J1_fgRRe4eOxTgYR4K6InTBmvIeR3mw&usqp=CAU"
+    },
+    { 
+        "id": 4,
+        "name": "Shein",
+        "amount":"20 0.4",
+        "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_0bvf53qWoA2bk1_tJQWlU9GWSfNeeXZNv7T2J1_fgRRe4eOxTgYR4K6InTBmvIeR3mw&usqp=CAU"
+    },
+    { 
+        "id": 5,
+        "name": "Shein",
+        "amount":"20 0.4",
+        "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_0bvf53qWoA2bk1_tJQWlU9GWSfNeeXZNv7T2J1_fgRRe4eOxTgYR4K6InTBmvIeR3mw&usqp=CAU"
+    },
+    { 
+        "id": 6,
+        "name": "Shein",
+        "amount":"20 0.4",
+        "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_0bvf53qWoA2bk1_tJQWlU9GWSfNeeXZNv7T2J1_fgRRe4eOxTgYR4K6InTBmvIeR3mw&usqp=CAU"
+    },
+    { 
+        "id": 7,
+        "name": "Shein",
+        "amount":"20 0.4",
+        "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_0bvf53qWoA2bk1_tJQWlU9GWSfNeeXZNv7T2J1_fgRRe4eOxTgYR4K6InTBmvIeR3mw&usqp=CAU"
+    },
+    { 
+        "id": 8,
+        "name": "Shein",
+        "amount":"20 0.4",
+        "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_0bvf53qWoA2bk1_tJQWlU9GWSfNeeXZNv7T2J1_fgRRe4eOxTgYR4K6InTBmvIeR3mw&usqp=CAU"
+    },
+    { 
+        "id": 9,
+        "name": "Shein",
+        "amount":"20 0.4",
+        "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_0bvf53qWoA2bk1_tJQWlU9GWSfNeeXZNv7T2J1_fgRRe4eOxTgYR4K6InTBmvIeR3mw&usqp=CAU"
+    }
+]

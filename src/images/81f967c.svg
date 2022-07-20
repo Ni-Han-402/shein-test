@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#4fd8ae"/>
+      <stop offset="1" stop-color="#06a171"/>
+    </linearGradient>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_54895" data-name="Rectangle 54895" width="22" height="14.667" fill="url(#linear-gradient)"/>
+    </clipPath>
+    <clipPath id="clip-我的_信息公告">
+      <rect width="24" height="24"/>
+    </clipPath>
+  </defs>
+  <g id="我的_信息公告" clip-path="url(#clip-我的_信息公告)">
+    <g id="Group_12255" data-name="Group 12255" transform="translate(1 4.5)">
+      <g id="Group_12164" data-name="Group 12164" transform="translate(0 0)" clip-path="url(#clip-path)">
+        <path id="Path_24923" data-name="Path 24923" d="M22.042,22.349H3.386a.332.332,0,0,1-.2-.572L10.1,15.156a.278.278,0,0,1,.36-.026c.494.36.991.712,1.474,1.084a1.248,1.248,0,0,0,1.548,0c.475-.364.965-.712,1.475-1.082a.279.279,0,0,1,.361.024l6.915,6.618a.333.333,0,0,1-.193.575" transform="translate(-1.708 -7.682)" fill="url(#linear-gradient)"/>
+        <path id="Path_24924" data-name="Path 24924" d="M2.672,0H22.242A.1.1,0,0,1,22.3.176c-1.209.9-6.687,4.9-9.475,6.936-.222.162-.393.3-.691.076,0,0-8.026-5.9-9.509-7.011A.1.1,0,0,1,2.672,0" transform="translate(-1.428 0)" fill="url(#linear-gradient)"/>
+        <path id="Path_24925" data-name="Path 24925" d="M.326,2.581l6.9,5.049a.243.243,0,0,1,.022.363l-6.9,6.595A.207.207,0,0,1,0,14.416V2.77a.209.209,0,0,1,.326-.19" transform="translate(0 -1.296)" fill="url(#linear-gradient)"/>
+        <path id="Path_24926" data-name="Path 24926" d="M32.98,7.672l6.877-5.011a.216.216,0,0,1,.336.2V14.437a.214.214,0,0,1-.358.177L32.957,8.048a.252.252,0,0,1,.023-.376" transform="translate(-18.192 -1.336)" fill="url(#linear-gradient)"/>
+      </g>
+    </g>
+  </g>
+</svg>

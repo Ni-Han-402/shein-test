@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#a8a49d"/>
+      <stop offset="1" stop-color="#5a574d"/>
+    </linearGradient>
+    <clipPath id="clip-我的_银行卡管理">
+      <rect width="24" height="24"/>
+    </clipPath>
+  </defs>
+  <g id="我的_银行卡管理" clip-path="url(#clip-我的_银行卡管理)">
+    <path id="Path_24937" data-name="Path 24937" d="M1220.051,231h-18.333a1.834,1.834,0,0,0-1.834,1.833v12.222a1.834,1.834,0,0,0,1.834,1.833h18.333a1.833,1.833,0,0,0,1.833-1.833V232.833A1.833,1.833,0,0,0,1220.051,231Zm-3.666,13.108h-11a.733.733,0,1,1,0-1.467h11a.733.733,0,0,1,0,1.467Zm0-3.667h-11a.733.733,0,1,1,0-1.467h11a.733.733,0,0,1,0,1.467Zm3.2-5.232a.679.679,0,0,1-.679.68h-1.085a.68.68,0,0,1-.68-.68v-1.085a.68.68,0,0,1,.68-.68h1.085a.679.679,0,0,1,.679.68Z" transform="translate(-1198.884 -227)" fill="url(#linear-gradient)"/>
+  </g>
+</svg>
