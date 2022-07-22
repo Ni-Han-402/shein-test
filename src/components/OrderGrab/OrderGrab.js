@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import "./OrderGrab.css";
 import { useSelector, useDispatch } from "react-redux/es/exports";
 import { authkey } from "../Login/authkey";
 import { Link } from "react-router-dom";
@@ -144,7 +143,8 @@ const OrderGrab = () => {
 
   return (
     <div>
-      <div className="  ">
+      <div>
+
         <nav className=" bg-gray-900 navbar py-0   max-w-[1080] mx-auto ">
           <div className=" flex justify-between">
 
@@ -169,7 +169,7 @@ const OrderGrab = () => {
 
           </div>
         </nav>
-        {/* bg-slate-800 */}
+
         <div className=" mt-18 ">
           <div className="container mx-auto max-w-[1080] lg:px-5 md:px-5 px-4  ">
             <section className="my-7  py-3 rounded-xl ">
@@ -188,7 +188,7 @@ const OrderGrab = () => {
                     </h2>
                     <div>
                       <p className=" mb-5">
-                        Click "Grab now" button to get the order.
+                        Click the "Grab Order" button to get your profits for each order you complete.
                       </p>
                       <p className=" text-emerald-800 mb-7">
                         Order grabbing... the result will be shown below
@@ -250,7 +250,7 @@ const OrderGrab = () => {
                     <div className="stat-value lg:text-4xl md:text-3xl text-2xl">
                       {assetStats.total_asset_view}
                     </div>
-                    <div className="stat-desc">Live Time</div>
+                    <div className="stat-desc">Life Time</div>
                   </div>
                 </div>
 
@@ -281,41 +281,21 @@ const OrderGrab = () => {
 
                     <div className="stat px-3 md:px-2 lg:px-5">
                       <div className="stat-figure text-secondary">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          className="inline-block w-8 h-8 stroke-current"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"
-                          ></path>
+                        <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                         </svg>
                       </div>
                       <div className="stat-title">Promotion bonus</div>
                       <div className="stat-value  lg:text-4xl md:text-3xl text-xl">
                         {assetStats.today_bonus}
                       </div>
-                      <div className="stat-desc">↗︎ Today</div>
+                      <div className="stat-desc"> Today</div>
                     </div>
 
                     <div className="stat px-3 md:px-2 lg:px-5">
                       <div className="stat-figure text-secondary">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          className="inline-block w-8 h-8 stroke-current"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4"
-                          ></path>
+                        <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                         </svg>
                       </div>
                       <div className="stat-title">Profits today</div>
@@ -323,7 +303,7 @@ const OrderGrab = () => {
                         <sup>$</sup>
                         {assetStats.today_profit}
                       </div>
-                      <div className="stat-desc">↘︎ Today</div>
+                      <div className="stat-desc"> Today</div>
                     </div>
                   </div>
                 </div>
@@ -331,14 +311,14 @@ const OrderGrab = () => {
             </section>
           </div>
         </div>
-      </div>
-      <>
+
+
         <div className="bg-[#3F4D67] rounded-lg">
           {showOrderCompletedTodayModal ? (
             <>
               <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none">
                 <div className="relative  my-6 mx-auto ">
-                  {/*content*/}
+
 
                   <div className="  w-90 mr-5 ml-5 sm:w-100 md:w-90 lg:w-90 xl:w-90 md:h-50 lg:h-45 xl:h-41 border-0 rounded-lg shadow-lg relative flex flex-col  bg-white outline-none focus:outline-none border-green-500">
 
@@ -366,7 +346,7 @@ const OrderGrab = () => {
             <>
               <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none ">
                 <div className="relative  my-6 mx-auto ">
-                  {/*content*/}
+
 
                   <div className=" reseller-popup w-90 mr-5 ml-5 sm:w-50 md:w-90 lg:w-90 xl:w-90 sm:h-50 md:h-50 lg:h-45 xl:h-41 border-0 rounded-lg shadow-lg relative flex flex-col  outline-none focus:outline-none border-green-500 bg-gradient-to-r from-cyan-500 to-blue-500 ...">
 
@@ -431,12 +411,12 @@ const OrderGrab = () => {
             </>
           ) : null}
         </div>
+      </div>
 
 
-
-
-      </>
     </div>
+
+
   );
 };
 

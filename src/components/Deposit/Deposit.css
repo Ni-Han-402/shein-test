@@ -1,7 +1,56 @@
-/* @import "~react-component-countdown-timer/lib/styles.css"; */
-.address {
-    text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.6);
+.appp{
+    width: 100%;
+    height: 100vh;
+   
+   background-color:black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20%;
+
 }
-.fontRestyleItalic {
-    font-style: italic;
+
+.input_group{
+    width: 30%;
+    height: 50px;
+    border-radius: 10px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 8px 0 8px;
+}
+
+.input_group i{
+    font-size: 30px;
+    color: rgb(157,165,178);
+
+}
+.input_group input{
+    width: 65%;
+    height: 40px;
+    border: 1px solid white;
+    outline: none;
+    color: rgb(157,165,178);
+    font-size: 17px;
+
+}
+
+.input_group button{
+    width: 100px;
+    height: 41px;
+    border-radius: 6px;
+    color: white;
+    font-size: 18px;
+    border:none;
+    outline: none;
+    cursor: pointer;
+}
+
+
+.copy{
+    background-color: rgb(77,144,253);
+}
+.copied{
+    background-color: rgb(39,196,82);
 }

@@ -74,7 +74,9 @@ const Home = () => {
   }, []);
 
   const gotoGrabTask = () => {
-    navigate("/order-grab");
+    
+    navigate("/order-grab", window.scrollTo(0, 0));
+    
   };
   const addLockFund = () => {
     fetch("https://mining-nfts.com/api/", {
@@ -141,73 +143,7 @@ const Home = () => {
         <div className="flex justify-center my-2 ">
           <img className="w-[100px]" src={Logo} alt="" />
         </div>
-        <div className="card mx-auto bg-base-200 shadow-xl w-full">
-          <div className="carousel w-full">
-            <div id="slide1" className="carousel-item relative w-full">
-              <img
-                alt=""
-                src="https://placeimg.com/800/200/arch"
-                className="w-full"
-              />
-              <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                <a href="#slide4" className="btn btn-circle">
-                  ❮
-                </a>
-                <a href="#slide2" className="btn btn-circle">
-                  ❯
-                </a>
-              </div>
-            </div>
-            <div id="slide2" className="carousel-item relative w-full">
-              <img
-                alt=""
-                src="https://placeimg.com/800/200/arch"
-                className="w-full"
-              />
-              <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                <a href="#slide1" className="btn btn-circle">
-                  ❮
-                </a>
-                <a href="#slide3" className="btn btn-circle">
-                  ❯
-                </a>
-              </div>
-            </div>
-            <div id="slide3" className="carousel-item relative w-full">
-              <img
-                alt=""
-                src="https://placeimg.com/800/200/arch"
-                className="w-full"
-              />
-              <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                <a href="#slide2" className="btn btn-circle">
-                  ❮
-                </a>
-                <a href="#slide4" className="btn btn-circle">
-                  ❯
-                </a>
-              </div>
-            </div>
-            <div id="slide4" className="carousel-item relative w-full">
-              <img
-                alt=""
-                src="https://placeimg.com/800/200/arch"
-                className="w-full"
-              />
-              <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                <a href="#slide3" className="btn btn-circle">
-                  ❮
-                </a>
-                <a href="#slide1" className="btn btn-circle">
-                  ❯
-                </a>
-              </div>
-            </div>
-          </div>
-          <div className="card-body">
-            <h1>Home</h1>
-          </div>
-        </div>
+      
         <div className="flex items-center gap-3 my-5">
           <img className="w-14 rounded" src={smallLogo} alt="" />
           <h1>
@@ -284,7 +220,7 @@ const Home = () => {
                         xmlns="http://www.w3.org/2000/svg"
                         stroke="#0A459F"
                         fill="#000a17"
-                        stroke-width="0"
+                        strokeWidth="0"
                         viewBox="0 0 24 24"
                         height="1em"
                         width="1em"
@@ -376,7 +312,7 @@ const Home = () => {
                         xmlns="http://www.w3.org/2000/svg"
                         stroke="#0A459F"
                         fill="#000a17"
-                        stroke-width="0"
+                        strokeWidth="0"
                         viewBox="0 0 24 24"
                         height="1em"
                         width="1em"
@@ -459,43 +395,43 @@ const Home = () => {
           ) : null}
         </div>
         <div className="grid grid-cols-2 gap-5 my-10">
-          <Link to="/deposit" className="flex flex-col items-center">
+          <Link to="/deposit"  onClick={window.scrollTo(0, 0)}   className="flex flex-col items-center">
             <img src={deposit} alt="" />
             <h1 className="text-xs md:text-xl">Deposit</h1>
           </Link>
-          <Link to="/withdraw" className="flex flex-col items-center">
+          <Link to="/withdraw"  onClick={window.scrollTo(0, 0)}  className="flex flex-col items-center">
             <img src={withdraw} alt="" />
             <h1 className="text-xs md:text-xl">Withdraw</h1>
           </Link>
-          <Link to="/invite-friends" className="flex flex-col items-center">
+          <Link to="/invite-friends"  onClick={window.scrollTo(0, 0)}  className="flex flex-col items-center">
             <img src={inviteFriends} alt="" />
             <h1 className="text-xs md:text-xl">Invite friends</h1>
           </Link>
-          <Link to="/team-report/agent" className="flex flex-col items-center">
+          <Link to="/team-report/agent"  onClick={window.scrollTo(0, 0)}  className="flex flex-col items-center">
             <img src={teamReport} alt="" />
             <h1 className="text-xs md:text-xl">Team report</h1>
           </Link>
-          <Link to="/about" className="flex flex-col items-center">
+          <Link to="/about"  onClick={window.scrollTo(0, 0)}   className="flex flex-col items-center">
             <img src={aboutUs} alt="" />
             <h1 className="text-xs md:text-xl">About us</h1>
           </Link>
-          <Link to="/rule-description" className="flex flex-col items-center">
+          <Link to="/rule-description"  onClick={window.scrollTo(0, 0)}  className="flex flex-col items-center">
             <img src={rules} alt="" />
             <h1 className="text-xs md:text-xl">Rules description</h1>
           </Link>
-          <Link to="/promo" className="flex flex-col items-center">
+          <Link to="/promo"  onClick={window.scrollTo(0, 0)}  className="flex flex-col items-center">
             <img src={promotion} alt="" />
             <h1 className="text-xs md:text-xl text-center">Promotion description</h1>
           </Link>
-          <Link to="/summary" className="flex flex-col items-center">
+          <Link to="/summary"  onClick={window.scrollTo(0, 0)}  className="flex flex-col items-center">
             <img src={vip} alt="" />
             <h1 className="text-xs md:text-xl">VIP</h1>
           </Link>
-          <Link to="/lucky-spin" className="flex flex-col items-center">
+          <Link to="/lucky-spin"  onClick={window.scrollTo(0, 0)}  className="flex flex-col items-center">
             <img className="w-11 rounded " src={wheelSpin} alt="" />
             <h1 className="text-xs md:text-xl">Lucky Spin</h1>
           </Link>
-          <Link to="/lock-history" className="flex flex-col items-center">
+          <Link to="/lock-history"  onClick={window.scrollTo(0, 0)}  className="flex flex-col items-center">
             <img className="w-11 rounded " src={account} alt="" />
             <h1 className="text-xs md:text-xl">Contract history</h1>
           </Link>
@@ -508,8 +444,8 @@ const Home = () => {
               {/*  */}
               <button
                 onClick={gotoGrabTask}
-                type="button"
-                className="px-8 my-3 py-3 font-bold bg-black text-white rounded focus:outline-none disabled:opacity-75"
+           
+                className="btn px-8 my-3 py-3 font-bold bg-black text-white rounded focus:outline-none disabled:opacity-75"
               >
                 Start Grabbing
               </button>

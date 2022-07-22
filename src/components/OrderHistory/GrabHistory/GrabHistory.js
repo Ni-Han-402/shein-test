@@ -56,7 +56,7 @@ const GrabHistory = () => {
   return (
     <div>
       <OrderHistory></OrderHistory>
-      <div className="container mx-auto max-w-[1080]">
+      <div className="container mx-auto max-w-[1080] mb-24">
         <div className="flex justify-between  lg:mx-0 md:mx-0 mx-5">
           <select
             id="dataLimit"

@@ -10,7 +10,7 @@ const RuleDescription = () => {
         <Link to="/">
           <IoIosArrowBack></IoIosArrowBack>
         </Link>
-        <h1 className="text-xl font-bold text-center">VIP</h1>
+        <h1 className="text-xl font-bold text-center">Rules</h1>
       </div>
 
       <div className="pt-28  about-container banner-area text-center font-bold h-40 lg:h-96 md:h-96 ">
@@ -166,10 +166,11 @@ const RuleDescription = () => {
                   metrics. Please refer to the current level progress, benefits
                   and upgrade conditions for each level.
                   <span>
-                    <a href="r" className="ml-3   font-bold link link-primary">
-                      {" "}
-                      VIP
-                    </a>{" "}
+                    
+                      <Link to="/summary"  onClick={window.scrollTo(0, 0)}    className="ml-3   font-bold  link link-primary">
+                 VIP
+                </Link>
+                  
                   </span>
                 </p>
               </div>
@@ -215,15 +216,16 @@ const RuleDescription = () => {
                 <div className="flex flex-col w-full border-opacity-400 ">
                   <div className="divider shadow-lg"></div>
                 </div>
-                <a href="r" className="link link-primary">
+                <Link  to="/about" onClick={window.scrollTo(0, 0)}    className="link link-primary">
                   About us
-                </a>
-                <a href="r" className="link link-secondary">
+                </Link>
+             
+                <Link   to="/promo" onClick={window.scrollTo(0, 0)}    className="link link-secondary">
                   Promotion description
-                </a>
-                <a href="r" className="link link-primary">
+                </Link>
+                <Link   to="/" onClick={window.scrollTo(0, 0)}    className="link link-primary">
                   Back to Homepage
-                </a>
+                </Link>
               </div>
             </div>
           </section>

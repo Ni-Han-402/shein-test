@@ -119,7 +119,7 @@ const Promo = () => {
                 </ul>
                 <div className=" rounded-md my-6 shadow-md md:mx-5 lg:mx-10 ">
                   <div className="overflow-x-auto">
-                    <table className="table w-full">
+                    <table className="table w-full text-center">
                       <thead>
                         <tr className="font-bold">
                           <th></th>
@@ -132,7 +132,7 @@ const Promo = () => {
                           <th>1</th>
                           <td>Level 1</td>
                           <td>
-                            76{" "}
+                            15{" "}
                             <sup>
                               <i className="fa-solid fa-percent"></i>
                             </sup>{" "}
@@ -141,9 +141,9 @@ const Promo = () => {
 
                         <tr className="hover">
                           <th>2</th>
-                          <td>Level 1</td>
+                          <td>Level 2</td>
                           <td>
-                            76{" "}
+                            10{" "}
                             <sup>
                               <i className="fa-solid fa-percent"></i>
                             </sup>{" "}
@@ -152,9 +152,29 @@ const Promo = () => {
 
                         <tr>
                           <th>3</th>
-                          <td>Level 1</td>
+                          <td>Level 3</td>
                           <td>
-                            76{" "}
+                            5{" "}
+                            <sup>
+                              <i className="fa-solid fa-percent"></i>
+                            </sup>{" "}
+                          </td>
+                        </tr>
+                        <tr>
+                          <th>4</th>
+                          <td>Level 4</td>
+                          <td>
+                            1{" "}
+                            <sup>
+                              <i className="fa-solid fa-percent"></i>
+                            </sup>{" "}
+                          </td>
+                        </tr>
+                        <tr>
+                          <th>5</th>
+                          <td>Level 5</td>
+                          <td>
+                            1{" "}
                             <sup>
                               <i className="fa-solid fa-percent"></i>
                             </sup>{" "}
@@ -257,15 +277,15 @@ const Promo = () => {
                 <div className="flex flex-col w-full border-opacity-400 ">
                   <div className="divider shadow-lg"></div>
                 </div>
-                <a href="r" className="link link-primary">
+                <Link  to="/about" onClick={window.scrollTo(0, 0)}    className="link link-primary">
                   About us
-                </a>
-                <a href="r" className="link link-secondary">
+                </Link>
+                <Link to="/rule-description"  onClick={window.scrollTo(0, 0)}    className="link link-secondary">
                   Rules description
-                </a>
-                <a href="r" className="link link-primary">
+                </Link>
+                <Link to="/"  onClick={window.scrollTo(0, 0)}    className="link link-primary">
                   Back to Homepage
-                </a>
+                </Link>
               </div>
             </div>
           </section>

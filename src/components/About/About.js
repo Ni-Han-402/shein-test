@@ -152,15 +152,17 @@ const About = () => {
                   <div className="flex flex-col w-full border-opacity-400 ">
                     <div className="divider shadow-lg"></div>
                   </div>
-                  <a href="r" className="link link-primary">
-                    Rule description
-                  </a>
-                  <a href="r" className="link link-secondary">
+                  <Link to="/rule-description"  onClick={window.scrollTo(0, 0)}    className="link link-secondary">
+                  Rules description
+                </Link>
+                 <Link to="/promo"  onClick={window.scrollTo(0, 0)}   className="link link-secondary">
                     Promotion description
-                  </a>
-                  <a href="r" className="link link-primary">
-                    Back to Homepage
-                  </a>
+                  </Link>
+                <Link to="/"  onClick={window.scrollTo(0, 0)}    className="link link-primary">
+                  Back to Homepage
+                </Link>
+                 
+                 
                 </div>
               </div>
             </section>
