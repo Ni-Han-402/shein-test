@@ -14,7 +14,7 @@ const RuleDescription = () => {
       </div>
 
       <div className="pt-28  about-container banner-area text-center font-bold h-40 lg:h-96 md:h-96 ">
-        {/* about-container */}
+
         <h2 className="lg:text-5xl text-xl md:text-4xl ">
           Description about FarfetchedGrab
         </h2>

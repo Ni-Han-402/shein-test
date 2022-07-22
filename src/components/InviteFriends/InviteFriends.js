@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { Link, Navigate, useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { updateDashboardMessage } from "../../store/slice";
 import { authkey } from "../Login/authkey";
@@ -33,15 +33,17 @@ const InviteFriends = () => {
     return Number.parseFloat(x).toFixed(2);
   };
   return (
+    
+    <div className="bg-slate-900 ">
     <div className="container max-w-[1080px] mx-auto p-5">
-      <Link to="/profile" className="btn btn-base-200 m-5">
+      <Link to="/profile" className="btn bg-white text-black rounded-full m-5 hover:bg-slate-300 hover:text-black  " >
         Back
       </Link>
       <div className="mt-48 text-center">
         <h1 className="text-5xl font-extrabold text-white">Invite A Friend</h1>
         <h1 className="text-3xl font-bold text-white">to join our family</h1>
         <p className="my-5">
-          <span className="text-xl">
+          <span className="text-xl text-white">
             Invitation Code:
             {Object.entries(dashboardMessagex).length === 0 ? (
               "user name"
@@ -62,6 +64,7 @@ const InviteFriends = () => {
           Copy link
         </button>
       </div>
+    </div>
     </div>
   );
 };

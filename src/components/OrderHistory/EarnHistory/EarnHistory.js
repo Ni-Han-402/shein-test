@@ -59,7 +59,7 @@ const EarnHistory = () => {
       <OrderHistory></OrderHistory>
 
       <div className="container mx-auto max-w-[1080]">
-        <div className="flex justify-between my-10 lg:mx-0 md:mx-0 mx-5">
+        <div className="flex justify-between  lg:mx-0 md:mx-0 mx-5">
           <select
             id="dataLimit"
             onChange={(e) => setDataLimit(e.target.value)}
@@ -96,21 +96,21 @@ const EarnHistory = () => {
                     <td>
                       <div>
                         {p?.type == "grab_team" ? (
-                          <span class=" font-bold ml-2   gap-2">
+                          <span className=" font-bold ml-2   gap-2">
                             Commission from team
                           </span>
                         ) : (
                           <></>
                         )}
                         {p?.type == "grab_self" ? (
-                          <span class=" font-bold ml-2   gap-2">
+                          <span className=" font-bold ml-2   gap-2">
                             Commission from order
                           </span>
                         ) : (
                           <></>
                         )}
                         {p?.type == "locker_return" ? (
-                          <span class=" font-bold ml-2   gap-2">
+                          <span className=" font-bold ml-2   gap-2">
                             Commission from locker
                           </span>
                         ) : (

@@ -79,7 +79,7 @@ const WithdrawalHistory = () => {
           onChange={(e) => setDataLimit(e.target.value)}
           className="select select-secondary select-bordered w-[150px] max-w-xs"
         >
-          
+
           <option value={1} defaultValue selected>
             50
           </option>
@@ -92,15 +92,16 @@ const WithdrawalHistory = () => {
         </select>
       </div>
       <div>
-        <div class="overflow-x-auto">
-          <table class=" table table-compact w-full text-center font-bold">
+        <div className="overflow-x-auto">
+          <table className=" table table-compact w-full text-center font-bold">
             <thead>
               <tr>
                 <th></th>
                 <th>Account</th>
-                <th>Time</th>
+
                 <th>Amount</th>
                 <th>Status</th>
+                <th>Time</th>
               </tr>
             </thead>
             {d?.map((p) => (
@@ -108,20 +109,20 @@ const WithdrawalHistory = () => {
                 <tr>
                   <th>{count++}</th>
                   <td>{p?.number}</td>
-                  <td>{p?.date}</td>
+
                   <td>{p?.amount}</td>
 
                   <td>
                     <div className="text-center ">
                       {p?.status == "paid" ? (
-                        <span class="ml-2 rounded-lg badge badge-success gap-2">
+                        <span className="ml-2 rounded-lg badge badge-success gap-2">
                           Paid
                         </span>
                       ) : (
                         <></>
                       )}
                       {p?.status == "pending" ? (
-                        <span class="ml-2 rounded-lg badge badge-warning gap-2">
+                        <span className="ml-2 rounded-lg badge badge-warning gap-2">
                           Pending
                         </span>
                       ) : (
@@ -129,14 +130,14 @@ const WithdrawalHistory = () => {
                       )}
 
                       {p?.status == "process" ? (
-                        <span class="ml-2 rounded-lg badge badge-primary gap-2">
+                        <span className="ml-2 rounded-lg badge badge-primary gap-2">
                           Being Proceed
                         </span>
                       ) : (
                         <></>
                       )}
                       {p?.status == "cancelled" ? (
-                        <span class="ml-2 rounded-lg badge badge-danger gap-2">
+                        <span className="ml-2 rounded-lg badge badge-danger gap-2">
                           Cancelled
                         </span>
                       ) : (
@@ -144,6 +145,7 @@ const WithdrawalHistory = () => {
                       )}
                     </div>
                   </td>
+                  <td>{p?.date}</td>
                 </tr>
               </tbody>
             ))}

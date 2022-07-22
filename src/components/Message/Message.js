@@ -19,13 +19,13 @@ const Message = () => {
     })
       .then((res) => res.json())
       .then((data) => {
-        console.log(data);
+      
 
         if (data.status == 200) {
-          console.log(data.message);
+        
           setMessage(data?.message);
         } else {
-          console.log(data);
+         
         }
       });
   }, []);

@@ -45,7 +45,6 @@ const Wheel4 = () => {
             .then((winHistory) => {
                 if (winHistory.status == 200) {
                     setWinDataT(winHistory.message);
-                    console.log(winHistory?.message);
 
                 } else {
                     navigate("/login");
@@ -125,7 +124,7 @@ const Wheel4 = () => {
             setMustSpin(false)
             swal({
                 title: "Are you sure?",
-                text: "You will be charged $5 fe for this spin",
+                text: "You will be charged $5 fee for this spin",
                 icon: "warning",
                 buttons: true,
                 dangerMode: true,
@@ -163,10 +162,10 @@ const Wheel4 = () => {
             <div className="wheel-decider">
                 <div id="successInfo" className="text-center text-slate-800"> <br />
                     <h1 className="font-bold lg:text-4xl ">Lucky Wheel!!!</h1>
-                    {winDataT.spinLeft <= 0 ? <h4 className="font-bold lg:text-xl pt-5 pb-16 text-blue-800">0</h4>
+                    {winDataT.spinLeft <= 0 ? <h4 className="font-bold lg:text-xl pt-5 pb-16 text-blue-800">Free Spin 0</h4>
 
                         :
-                        <h4 className="font-bold lg:text-xl pt-5 pb-16 text-blue-800">Spin Left {winDataT.spinLeft} </h4>
+                        <h4 className="font-bold lg:text-xl pt-5 pb-16 text-blue-800">Free Spin  {winDataT.spinLeft} </h4>
 
                     }
                 </div>
@@ -205,17 +204,17 @@ const Wheel4 = () => {
                 <div >
 
 
-                    <h2 className="text-2xl font-bold py-8">You win
+                    <h2 className="text-2xl font-bold py-8">
                         {mustSpin == true
                             ? (<span className="pl-2"></span>)
-                            : (<span className="pl-2"> {winner.option}</span>)
+                            :(<span className="pl-2"> You win  {winner.option}</span>)
                         }</h2>
                 </div>
 
 
             </div>
 
-            <div>
+            <div className="wheel-decider">
                 <div className="text-slate-800 my-10 card w-full bg-white rounded shadow-xl mx-5">
                     <div className="card-body">
                         <h2 className="card-title">Rules Description!</h2>

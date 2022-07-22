@@ -1,9 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { AiOutlineArrowRight } from "react-icons/ai";
 import { IoIosArrowBack } from "react-icons/io";
 import { FaCheckCircle } from "react-icons/fa";
-import { GrStatusGood } from "react-icons/gr";
+
 import { useSelector, useDispatch } from "react-redux";
 import { authkey } from "../Login/authkey";
 import { updateSummary } from "../../store/slice";
@@ -31,7 +31,7 @@ const Summary = () => {
   }, []);
   const summary = useSelector((state) => state.summary.data);
   const user = useSelector((state) => state.user.data);
-  let iconStyles = { color: "white", fontSize: "1.5em" };
+
 
   return (
     <div className="container max-w-[1080px] mx-auto p-5">
@@ -44,7 +44,7 @@ const Summary = () => {
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mt-5">
         {summary.map((card) =>
-          card.id < user[0].packid ? (
+          card.id <= user[0].packid ? (
             <div className="card bg-base-200 shadow-xl h-20 ">
               <div className="card-body">
                 <div className="flex justify-between">
@@ -75,7 +75,7 @@ const Summary = () => {
                   <h1>{card.marketName}</h1>
                 </div>
                 <div className="flex justify-between">
-                  <h1>Locked Amount</h1>
+                  <h1>Minimum balance</h1>
                   <h1>{card.balanceRequire}</h1>
                 </div>
                 <div className="flex justify-between">

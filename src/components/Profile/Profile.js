@@ -1,11 +1,8 @@
 import React, { useEffect } from "react";
 import avater from "../../images/avater.png";
 import { MdEmail } from "react-icons/md";
-import { AiOutlineClear } from "react-icons/ai";
 import { AiOutlineSound } from "react-icons/ai";
 import { AiOutlineArrowRight } from "react-icons/ai";
-
-// images
 import info from "../../images/68d5e54.svg";
 import deposit from "../../images/fae87e4.svg";
 import withdraw from "../../images/a723444.svg";
@@ -13,10 +10,8 @@ import history from "../../images/2084950.svg";
 import account from "../../images/88ac34a.svg";
 import vip from "../../images/cc6e80b.svg";
 import transection from "../../images/4a9ab9a.svg";
-
 import teamReport from "../../images/eb36604.svg";
 import message from "../../images/81f967c.svg";
-
 import inviteFriends from "../../images/04c663c.svg";
 import Navber from "../Navber/Navber";
 import { Link,  useNavigate } from "react-router-dom";
@@ -24,6 +19,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { updateDashboardMessage } from "../../store/slice";
 import { authkey } from "../Login/authkey";
 import wheelSpin from "../../images/wheelSpinBgrmv.png";
+
 const Profile = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
@@ -104,10 +100,10 @@ const Profile = () => {
               </div>
             </div>
             <div className="flex gap-3">
-              <div class="indicator">
+              <div className="indicator">
               <Link to="/message" >
-              <span class="indicator-item badge badge-warning rounded-lg">{dashboardMessagex.notify}</span>
-                <div class="grid  place-items-center"><MdEmail className="w-8 h-8"></MdEmail></div>
+              <span className="indicator-item badge badge-warning rounded-lg">{dashboardMessagex.notify}</span>
+                <div className="grid  place-items-center"><MdEmail className="w-8 h-8"></MdEmail></div>
           </Link>
                
               </div>
@@ -193,7 +189,7 @@ const Profile = () => {
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              class="h-6 w-6"
+              className="h-6 w-6"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"

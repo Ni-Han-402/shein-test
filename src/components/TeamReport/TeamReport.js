@@ -33,7 +33,7 @@ const TeamReport = () => {
   }, []);
 
   var teamReportData = useSelector((state) => state.reports.reports);
-  console.log(teamReportData);
+
 
   return (
     <div className="container max-w-[1080px] mx-auto p-5">
@@ -45,7 +45,7 @@ const TeamReport = () => {
       </div>
       <div className="flex justify-between max-w-[600px]  md:mx-auto">
         <div className="flex flex-col items-center">
-          <Link to="/team-report/agent">Agent Report</Link>
+          <Link to="/team-report/agent">Team Report</Link>
           <div className="h-[2px] w-6 bg-primary"></div>
         </div>
         <div className="flex flex-col items-center">
@@ -53,29 +53,17 @@ const TeamReport = () => {
           <div className="h-[2px] w-6 bg-primary"></div>
         </div>
       </div>
-      <div className="flex justify-between my-10">
-        <select className="select select-secondary select-bordered w-[150px] max-w-xs">
-          <option defaultValue selected>
-            Today
-          </option>
-          <option>Yesterday</option>
-          <option>Within a day</option>
-          <option>Customized</option>
-        </select>
-        <select className="select select-secondary select-bordered w-[150px] max-w-xs">
-          <option disabled selected>
-            All
-          </option>
-        </select>
+      <div className="flex justify-between my-5">
+
       </div>
 
       <div className="card mx-auto bg-base-200 shadow-xl w-full">
         <div className="card-body">
           {loading ? (
-            <div class="text-center">
+            <div className="text-center">
               <svg
                 role="status"
-                class="inline w-8 h-8 mr-2 text-gray-200 animate-spin dark:text-gray-600 fill-blue-600"
+                className="inline w-8 h-8 mr-2 text-gray-200 animate-spin dark:text-gray-600 fill-blue-600"
                 viewBox="0 0 100 101"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
@@ -91,8 +79,8 @@ const TeamReport = () => {
               </svg>
             </div>
           ) : null}
-          <div class="card mx-auto bg-base-200 shadow-xl w-full">
-            <div class="card-body">
+          <div className="card mx-auto bg-base-200 shadow-xl w-full">
+            <div className="card-body">
               <div className="flex gap-5 mb-5">
                 <div>
                   <h2 className="card-title">Financial Info</h2>

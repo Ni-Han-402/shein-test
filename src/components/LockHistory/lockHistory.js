@@ -27,14 +27,14 @@ const LockHistory = () => {
   const dashboardMessage = useSelector(
     (state) => state.dashboardmessage.message
   );
-  console.log(dashboardMessage);
+ 
   return (
     <div className="container max-w-[1080px] mx-auto p-2">
       <div className="bg-base-200 p-5 rounded-xl mb-5 flex items-center justify-between">
         <Link to="/profile">
           <IoIosArrowBack></IoIosArrowBack>
         </Link>
-        <h1 className="text-xl font-bold text-center">Contact History</h1>
+        <h1 className="text-xl font-bold text-center">Contract History</h1>
       </div>
       <div className="overflow-x-auto">
         <table className="table table-compact text-center  w-full ">
@@ -59,7 +59,21 @@ const LockHistory = () => {
                   <td>{item.amount}</td>
                   <td>{item.percent}%</td>
                   <td>{item.counter} days</td>
-                  <td>{item.status}</td>
+                  
+                  <td>{item?.status == "finished" ? (
+                      <span className=" font-bold ml-2 rounded-lg badge badge-success gap-2">
+                        Complete
+                      </span>
+                    ) : (
+                      <></>
+                    )}
+                    {item?.status == "pending" ? (
+                      <span className="font-bold  ml-2 rounded-lg badge badge-primary gap-2">
+                        Acitve
+                      </span>
+                    ) : (
+                      <></>
+                    )}</td>
                   <td>{item.time}</td>
                   <td>{item.endTime}</td>
                 </tr>

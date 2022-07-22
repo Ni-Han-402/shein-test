@@ -23,7 +23,6 @@ const DepositeHistory = () => {
       .then((res) => res.json())
       .then((depoHistoryData) => {
         if (depoHistoryData.status == 200) {
-          console.log(depoHistoryData?.message);
           setDipoHistory(depoHistoryData?.message);
         } else {
           navigate("/login");
@@ -93,15 +92,16 @@ const DepositeHistory = () => {
       </div>
 
       <div>
-        <div class="overflow-x-auto">
-          <table class="table table-compact w-full text-center">
+        <div className="overflow-x-auto">
+          <table className="table table-compact w-full text-center">
             <thead>
               <tr>
                 <th></th>
                 <th>Address</th>
-                <th>Time</th>
+
                 <th>Amount</th>
                 <th>Status</th>
+                <th>Time</th>
               </tr>
             </thead>
             {d?.map((p) => (
@@ -109,14 +109,14 @@ const DepositeHistory = () => {
                 <tr>
                   <th>{count++}</th>
                   <td>{p?.pay_address}</td>
-                  <td>{p?.date}</td>
+
                   <td>{p?.price_amount}</td>
 
                   <td>
                     <div className="text-center ">
                       {p?.payment_status == "finished" ? (
                         <div className="flex font-bold ">
-                          <span class="ml-2 rounded-lg badge badge-success gap-2">
+                          <span className="ml-2 rounded-lg badge badge-success gap-2">
                             Proceed
                           </span>
                         </div>
@@ -126,7 +126,7 @@ const DepositeHistory = () => {
 
                       {p?.payment_status == "waiting" ? (
                         <div className="flex font-bold ">
-                          <span class="ml-2 rounded-lg badge badge-warning gap-2">
+                          <span className="ml-2 rounded-lg badge badge-warning gap-2">
                             Waiting Payment
                           </span>
                         </div>
@@ -136,7 +136,7 @@ const DepositeHistory = () => {
                       {p?.payment_status == "confirmed" ? (
                         //  || "sending" || "confirming"
                         <div className="flex font-bold ">
-                          <span class="ml-2 rounded-lg badge badge-primary gap-2">
+                          <span className="ml-2 rounded-lg badge badge-primary gap-2">
                             Being Proceed
                           </span>
                         </div>
@@ -145,7 +145,7 @@ const DepositeHistory = () => {
                       )}
                       {p?.payment_status == "sending" ? (
                         <div className="flex font-bold ">
-                          <span class="ml-2 rounded-lg badge badge-primary gap-2">
+                          <span className="ml-2 rounded-lg badge badge-primary gap-2">
                             Being Proceed
                           </span>
                         </div>
@@ -154,7 +154,7 @@ const DepositeHistory = () => {
                       )}
                       {p?.payment_status == "confirming" ? (
                         <div className="flex font-bold ">
-                          <span class="ml-2 rounded-lg badge badge-primary gap-2">
+                          <span className="ml-2 rounded-lg badge badge-primary gap-2">
                             Being Proceed
                           </span>
                         </div>
@@ -164,7 +164,7 @@ const DepositeHistory = () => {
 
                       {p?.payment_status == "failed" ? (
                         <div className="flex font-bold ">
-                          <span class="ml-2 rounded-lg badge badge-danger gap-2">
+                          <span className="ml-2 rounded-lg badge badge-danger gap-2">
                             Failed
                           </span>
                         </div>
@@ -173,7 +173,7 @@ const DepositeHistory = () => {
                       )}
                       {p?.payment_status == "" ? (
                         <div className="flex font-bold ">
-                          <span class="ml-2 rounded-lg badge badge-secondary gap-2">
+                          <span className="ml-2 rounded-lg badge badge-secondary gap-2">
                             Status
                           </span>
                         </div>
@@ -182,6 +182,7 @@ const DepositeHistory = () => {
                       )}
                     </div>
                   </td>
+                  <td>{p?.date}</td>
                 </tr>
               </tbody>
             ))}

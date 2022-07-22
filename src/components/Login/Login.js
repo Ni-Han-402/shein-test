@@ -3,7 +3,7 @@ import { useForm } from "react-hook-form";
 import { Link, useNavigate } from "react-router-dom";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import logo from "../../images/8666358.svg";
+import logo from "../../images/logo.png";
 import { authkey, logged } from "./authkey";
 
 const Login = () => {
@@ -28,14 +28,14 @@ const Login = () => {
     })
       .then((res) => res.json())
       .then((data) => {
-        console.log(data);
+       
         reset();
         if (data.status == 200) {
           localStorage.setItem("auth", data.message);
           navigate("/");
         } else if (data.status == 100) {
           toast.error(data.message);
-          console.log(data.message);
+         
         } else if (data.status == 300) {
           toast.dark(data.message);
         }

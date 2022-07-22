@@ -112,7 +112,7 @@ const Withdraw = () => {
 
             setDivData(wsData.message);
           } else {
-            console.log(wsData);
+           
           }
         });
     } else {

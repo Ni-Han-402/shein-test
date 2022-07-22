@@ -93,8 +93,8 @@ const DepositeHistory = () => {
       </div>
 
       <div>
-        <div class="overflow-x-auto">
-          <table class="text-center table table-compact w-full">
+        <div className="overflow-x-auto">
+          <table className="text-center table table-compact w-full">
             <thead>
               <tr>
                 <th></th>
@@ -115,7 +115,7 @@ const DepositeHistory = () => {
                   <td>
                     <div className="text-center ">
                       {p?.payment_status == "finished" ? (
-                        <span class=" font-bold ml-2 rounded-lg badge badge-success gap-2">
+                        <span className=" font-bold ml-2 rounded-lg badge badge-success gap-2">
                           Proceed
                         </span>
                       ) : (
@@ -123,28 +123,28 @@ const DepositeHistory = () => {
                       )}
 
                       {p?.payment_status == "waiting" ? (
-                        <span class="font-bold  ml-2 rounded-lg badge badge-warning gap-2">
+                        <span className="font-bold  ml-2 rounded-lg badge badge-warning gap-2">
                           Waiting Payment
                         </span>
                       ) : (
                         <></>
                       )}
                       {p?.payment_status == "confirmed" ? (
-                        <span class=" font-bold ml-2 rounded-lg badge badge-primary gap-2">
+                        <span className=" font-bold ml-2 rounded-lg badge badge-primary gap-2">
                           Being Proceed
                         </span>
                       ) : (
                         <></>
                       )}
                       {p?.payment_status == "sending" ? (
-                        <span class=" font-bold ml-2 rounded-lg badge badge-primary gap-2">
+                        <span className=" font-bold ml-2 rounded-lg badge badge-primary gap-2">
                           Being Proceed
                         </span>
                       ) : (
                         <></>
                       )}
                       {p?.payment_status == "confirming" ? (
-                        <span class=" font-bold  ml-2 rounded-lg badge badge-primary gap-2">
+                        <span className=" font-bold  ml-2 rounded-lg badge badge-primary gap-2">
                           Being Proceed
                         </span>
                       ) : (
@@ -152,14 +152,14 @@ const DepositeHistory = () => {
                       )}
 
                       {p?.payment_status == "failed" ? (
-                        <span class=" font-bold ml-2 rounded-lg badge badge-danger gap-2">
+                        <span className=" font-bold ml-2 rounded-lg badge badge-danger gap-2">
                           Failed
                         </span>
                       ) : (
                         <></>
                       )}
                       {p?.payment_status == "" ? (
-                        <span class=" font-bold  ml-2 rounded-lg badge badge-secondary gap-2">
+                        <span className=" font-bold  ml-2 rounded-lg badge badge-secondary gap-2">
                           Status
                         </span>
                       ) : (

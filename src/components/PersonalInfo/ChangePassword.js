@@ -11,7 +11,6 @@ const ChangePassword = () => {
   } = useForm();
   const onSubmit = async (data) => {
     const password = data.password;
-    console.log(password);
     setNewPass(password);
     reset();
   };

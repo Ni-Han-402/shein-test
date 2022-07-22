@@ -57,7 +57,7 @@ const GrabHistory = () => {
     <div>
       <OrderHistory></OrderHistory>
       <div className="container mx-auto max-w-[1080]">
-        <div className="flex justify-between my-10 lg:mx-0 md:mx-0 mx-5">
+        <div className="flex justify-between  lg:mx-0 md:mx-0 mx-5">
           <select
             id="dataLimit"
             onChange={(e) => setDataLimit(e.target.value)}
@@ -75,71 +75,68 @@ const GrabHistory = () => {
             <option vlaue={7}>All</option>
           </select>
         </div>
-        <section className="  container my-10">
-          <div className="overflow-x-auto w-full rounded shadow-lg  mb-24 ">
-            <table className="table table-compact w-full text-center font-bold mb-16">
-              <thead>
-                <tr>
-                  <th>Id</th>
-                  <th> Item </th>
-                  <th>Commission</th>
-                  <th>Status</th>
-                </tr>
-              </thead>
-              {d?.map((p) => (
-                <tbody key={p?.id}>
-                  <tr>
-                    <td>{p?.id}</td>
+        <section className="  container my-10  ">
+          <div className="grid grid-cols-1 gap-5">
 
 
-                    <td>
-                      <div className="flex justify-center space-x-3">
-                        <div className="avatar">
-                          <div className="mask mask-squircle w-16 h-16">
-                            <img src={p?.image} alt="" />
-                          </div>
-                        </div>
-                      </div>
-                      <span className="max-w-[200px]">
-                        {p?.title} 
+            {d?.map((p) => (
+              <div
+                key={p?.id}
+                className="card mx-auto bg-base-200 shadow-xl w-full p-5 "
+              >
+
+                <div className="">
+                  <div className="flex justify-between">
+                    <small className=" text-gray-600">order number: {p?.number} </small>
+                    {p?.status == "finished" ? (
+                      <span className=" font-bold ml-2 rounded-lg badge badge-success gap-2">
+                        Complete
                       </span>
-                     
-                    </td>
-                    <td>{p?.commission}</td>
+                    ) : (
+                      <></>
+                    )}
+                    {p?.status == "pending" ? (
+                      <span className="font-bold  ml-2 rounded-lg badge badge-warning gap-2">
+                        Pending
+                      </span>
+                    ) : (
+                      <></>
+                    )}
+                   
+                  </div>
+                  <div className="flex w-full">
+                    <div className="flex justify-center items-center">
+                      <img src={p?.image} alt="Not loaded" className="m-3 w-[100px] h-[100px]" />
+                    </div>
 
-                    <td>
-                      <div className="text-center ">
-                        {p?.status == "finished" ? (
-                          <span class=" font-bold ml-2 rounded-lg badge badge-success gap-2">
-                            Proceed
-                          </span>
-                        ) : (
-                          <></>
-                        )}
-                        {p?.status == "pending" ? (
-                          <span class="font-bold  ml-2 rounded-lg badge badge-warning gap-2">
-                            Pending
-                          </span>
-                        ) : (
-                          <></>
-                        )}
-                        {p?.status == "" ? (
-                          <span class=" font-bold  ml-2 rounded-lg badge badge-primary  gap-2">
-                            Status
-                          </span>
-                        ) : (
-                          <></>
-                        )}
+                    <div className="m-3 w-full">
+                      <h1>{p?.title}</h1>
+                      <small className="mt-8 text-gray-600">Order Time: {p?.time}</small>
+                      <div className="flex justify-between">
+                        <h4 className="font-bold mt-3 text-2xl text-red-700">{p?.price}</h4>
+                        <h4 className="mt-3 text-xl text-green-700">{p?.commission}</h4>
                       </div>
-                    </td>
-                  </tr>
-                </tbody>
-              ))}
-            </table>
+
+                    </div>
+
+                  </div>
+
+
+
+
+
+                </div>
+
+              </div>
+
+
+
+            ))}
+
           </div>
         </section>
-      </div>
-    </div>
+      </div >
+    </div >
   );
 };
 

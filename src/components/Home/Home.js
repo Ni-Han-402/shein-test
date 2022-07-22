@@ -1,17 +1,15 @@
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import Logo from "../../images/8666358.svg";
-import smallLogo from "../../images/fd8ca81.png";
-// images
+import Logo from "../../images/logo.png";
+import smallLogo from "../../images/user.png";
 import deposit from "../../images/c09a915.svg";
 import withdraw from "../../images/5dfa582.svg";
 import aboutUs from "../../images/e2c4587.svg";
 import rules from "../../images/30da4dc.svg";
 import promotion from "../../images/152d578.svg";
 import vip from "../../images/101f845.svg";
-import event from "../../images/567f27f.svg";
 import inviteFriends from "../../images/8da3f99.svg";
-import taskImg from "../../images/task1.jpg";
+
 import Navber from "../Navber/Navber";
 import { Link } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
@@ -19,7 +17,6 @@ import { authkey } from "../Login/authkey";
 
 import { updateSummary } from "../../store/slice";
 import { updateUser } from "../../store/slice";
-import { primary } from "daisyui/src/colors";
 import { updateDashboardMessage } from "../../store/slice";
 import teamReport from "../../images/eb36604.svg";
 import wheelSpin from "../../images/wheelSpinBgrmv.png";
@@ -34,7 +31,6 @@ const Home = () => {
   const dispatch = useDispatch();
   var dashboard = new FormData();
 
-  var arrayData = [];
   const navigate = useNavigate();
   dashboard.append("dashboard", "");
   dashboard.append("auth", authkey);
@@ -113,26 +109,26 @@ const Home = () => {
   };
   const updateFundLock = (e) => {
     e.preventDefault();
-    console.log(e.target.value);
-    setFundLockAmount(e.target.value);
-    let percent = 0;
-    if (e.target.value == 300) {
+    setFundLockAmount(parseInt(e.target.value));
+    var percent = 0;
+    let amountValue = parseInt(e.target.value);
+    if (amountValue === 300) {
       percent = 5.5;
-    } else if (e.target.value == 500) {
+    } else if (amountValue === 500) {
       percent = 6.5;
-    } else if (e.target.value == 1000) {
+    } else if (amountValue === 1000) {
       percent = 7;
-    } else if (e.target.value == 1500) {
+    } else if (amountValue === 1500) {
       percent = 7.5;
-    } else if (e.target.value == 2000) {
+    } else if (amountValue === 2000) {
       percent = 8;
     } else {
       percent = 0;
     }
 
-    setdaily(e.target.value / 100 * percent);
-    setmonth(e.target.value / 100 * percent * 30);
-    settotal((e.target.value / 100 * percent * 30) + parseInt(e.target.value));
+    setdaily(amountValue / 100 * percent);
+    setmonth(amountValue / 100 * percent * 30);
+    settotal((amountValue / 100 * percent * 30) + (amountValue));
 
   };
   const dashboardMessage = useSelector(
@@ -142,8 +138,8 @@ const Home = () => {
   return (
     <>
       <div className="container max-w-[1080px] mx-auto p-5 relative">
-        <div className="flex justify-center">
-          <img src={Logo} alt="" />
+        <div className="flex justify-center my-2 ">
+          <img className="w-[100px]" src={Logo} alt="" />
         </div>
         <div className="card mx-auto bg-base-200 shadow-xl w-full">
           <div className="carousel w-full">
@@ -213,7 +209,7 @@ const Home = () => {
           </div>
         </div>
         <div className="flex items-center gap-3 my-5">
-          <img className="w-14" src={smallLogo} alt="" />
+          <img className="w-14 rounded" src={smallLogo} alt="" />
           <h1>
             Welcome back,{" "}
             {Object.entries(dashboardMessage).length > 0
@@ -308,14 +304,14 @@ const Home = () => {
                       <p className="text-xs md:text-sm text-center">
                         Contract room locks your money in our site for 30 days
                         allowing you to withdraw just your daily profits and the
-                        commission is bigger. The locked amount will ve returned
+                        commission is bigger. The locked amount will be returned
                         after 30 days
                       </p>
                       <select
                         type="text"
                         placeholder="Amount"
                         onChange={updateFundLock}
-                        class="select select-secondary w-full my-3"
+                        className="select select-secondary w-full my-3"
                       >
                         <option value="0" defaultValue>
                           Select Plan
@@ -323,10 +319,10 @@ const Home = () => {
                         <option value="300" >
                           300$ return 5.5%
                         </option>
-                        <option value="500">500$ return 6%</option>
-                        <option value="1000">1000$ return 6.5%</option>
-                        <option value="1500">1500$ return 7%</option>
-                        <option value="2000">2000$ return 7.5%</option>
+                        <option value="500">500$ return 6.5%</option>
+                        <option value="1000">1000$ return 7%</option>
+                        <option value="1500">1500$ return 7.5%</option>
+                        <option value="2000">2000$ return 8%</option>
                       </select>
                       {/* <input
                         type="text"
@@ -513,7 +509,7 @@ const Home = () => {
               <button
                 onClick={gotoGrabTask}
                 type="button"
-                class="px-8 my-3 py-3 font-bold bg-black text-white rounded focus:outline-none disabled:opacity-75"
+                className="px-8 my-3 py-3 font-bold bg-black text-white rounded focus:outline-none disabled:opacity-75"
               >
                 Start Grabbing
               </button>
@@ -540,7 +536,7 @@ const Home = () => {
                       {task.id < dashboardData.user[0].packid ? (
                         <button
                           type="button"
-                          class="btn-sm md:btn lg:btn mt-5  font-bold bg-emerald-600 text-black  focus:outline-none disabled:opacity-75"
+                          className="btn-sm md:btn lg:btn mt-5  font-bold bg-emerald-600 text-black  focus:outline-none disabled:opacity-75"
                           disabled
                         >
                           Completed

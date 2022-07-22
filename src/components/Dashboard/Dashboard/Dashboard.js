@@ -4,7 +4,7 @@ import { authkey } from "../../Login/authkey";
 import Sites from "../Sites/Sites/Sites";
 import profilePic from "../../../images/profile.jpg";
 import { MdOutlineRotateLeft } from "react-icons/md";
-import { useSelector, useDispatch } from "react-redux";
+import { useDispatch } from "react-redux";
 import { updateSummary } from "../../../store/slice";
 import { updateUser } from "../../../store/slice";
 
@@ -29,7 +29,6 @@ const Dashboard = () => {
           setUsers(data);
           dispatch(updateSummary(data.message.pack));
           dispatch(updateUser(data.message.user));
-          console.log(data);
         } else {
           navigate("/login");
         }

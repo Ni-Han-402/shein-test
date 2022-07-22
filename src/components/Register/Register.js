@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { useParams } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import { authkey } from "../Login/authkey";
-import { toast, ToastContainer } from "react-toastify";
+import { toast } from "react-toastify";
 const Register = () => {
   const { invitecode } = useParams();
   const navigate = useNavigate();
@@ -41,7 +41,7 @@ const Register = () => {
     })
       .then((res) => res.json())
       .then((resp) => {
-        console.log(resp);
+    
         if (resp.status == 200) {
           var login = new FormData();
           login.append("username", data.username);
@@ -55,14 +55,14 @@ const Register = () => {
           })
             .then((res) => res.json())
             .then((data) => {
-              console.log(data);
+           
               reset();
               if (data.status == 200) {
                 localStorage.setItem("auth", data.message);
                 navigate("/");
               } else if (data.status == 100) {
                 toast.error(data.message);
-                console.log(data.message);
+               
               } else if (data.status == 300) {
                 toast.dark(data.message);
               }
@@ -186,10 +186,10 @@ const Register = () => {
 
           <div className="form-control mt-6">
             {isLoading ? (
-              <div class="btn btn-primary">
+              <div className="btn btn-primary">
                 <svg
                   role="status"
-                  class="inline mr-2 w-8 h-8 text-gray-200 animate-spin dark:text-gray-600 fill-blue-600"
+                  className="inline mr-2 w-8 h-8 text-gray-200 animate-spin dark:text-gray-600 fill-blue-600"
                   viewBox="0 0 100 101"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"

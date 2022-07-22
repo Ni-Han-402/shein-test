@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import avater from "../../images/avater.png";
 import { useSelector, useDispatch } from "react-redux";
 import { TbEdit } from "react-icons/tb";
-import { Link, Navigate, useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { IoIosArrowBack } from "react-icons/io";
 import { authkey } from "../Login/authkey";
 import { useForm } from "react-hook-form";
@@ -46,13 +46,8 @@ const PersonalInfo = () => {
     })
       .then((res) => res.json())
       .then((data) => {
-        console.log(data);
-
         if (data.status == 200) {
-          console.log(data);
           setVerify(data);
-        } else {
-          console.log(data);
         }
       });
   };
@@ -66,7 +61,7 @@ const PersonalInfo = () => {
   const onSubmit = async (data) => {
     const verifyMessage = data.verification;
     const loginPass = data.newLoginPass;
-    console.log(verifyMessage);
+
     if (verifyMessage == verify?.message?.code) {
       var loginPassChange = new FormData();
       loginPassChange.append("auth", authkey);
@@ -81,19 +76,14 @@ const PersonalInfo = () => {
       })
         .then((res) => res.json())
         .then((data) => {
-          console.log(data);
-
           if (data.status == 200) {
-            console.log(data);
             reset();
             toast.success(data.message);
             navigate("/profile");
-          } else {
-            console.log(data);
           }
         });
     } else {
-      console.log("Dont Match");
+
     }
   };
   const handleWithdrawVerify = (e) => {
@@ -114,18 +104,13 @@ const PersonalInfo = () => {
       })
         .then((res) => res.json())
         .then((data) => {
-          console.log(data);
-
-          if (data.status == 200) {
-            console.log(data);
+          if (data.status == 200) {          
             toast.success(data.message);
             navigate("/profile");
-          } else {
-            console.log(data);
-          }
+          } 
         });
     } else {
-      console.log("Dont Match");
+     
     }
   };
   const handleAddress = (e) => {
@@ -147,15 +132,13 @@ const PersonalInfo = () => {
       })
         .then((res) => res.json())
         .then((data) => {
-          console.log(data);
+        
 
           if (data.status == 200) {
-            console.log(data);
+         
             toast.success(data.message);
             navigate("/profile");
-          } else {
-            console.log(data);
-          }
+          }  
         });
     }
   };
@@ -240,16 +223,16 @@ const PersonalInfo = () => {
                 </div>
               </div>
             </div>
-            <input type="checkbox" id="my-modal-4" class="modal-toggle" />
-            <label for="my-modal-4" class="modal cursor-pointer">
-              <label class="modal-box relative" for="">
+            <input type="checkbox" id="my-modal-4" className="modal-toggle" />
+            <label for="my-modal-4" className="modal cursor-pointer">
+              <label className="modal-box relative" for="">
                 <label
                   htmlFor="my-modal-4"
                   className="btn btn-sm btn-circle absolute right-2 top-2"
                 >
                   ✕
                 </label>
-                <h3 class="text-2xl text-center font-bold mb-5">
+                <h3 className="text-2xl text-center font-bold mb-5">
                   Change Login Password
                 </h3>
                 <form onSubmit={handleSubmit(onSubmit)}>
@@ -292,9 +275,9 @@ const PersonalInfo = () => {
                 <TbEdit className="text-2xl text-error "></TbEdit>
               </label>
 
-              <input type="checkbox" id="my-modal" class="modal-toggle" />
-              <div class="modal">
-                <div class="modal-box">
+              <input type="checkbox" id="my-modal" className="modal-toggle" />
+              <div className="modal">
+                <div className="modal-box">
                   <label
                     htmlFor="my-modal"
                     className="btn btn-sm btn-circle absolute right-2 top-2"
@@ -320,16 +303,16 @@ const PersonalInfo = () => {
                 </div>
               </div>
             </div>
-            <input type="checkbox" id="my-modal-6" class="modal-toggle" />
-            <div class="modal modal-bottom sm:modal-middle">
-              <div class="modal-box">
+            <input type="checkbox" id="my-modal-6" className="modal-toggle" />
+            <div className="modal modal-bottom sm:modal-middle">
+              <div className="modal-box">
                 <label
                   htmlFor="my-modal-6"
                   className="btn btn-sm btn-circle absolute right-2 top-2"
                 >
                   ✕
                 </label>
-                <h3 class="text-2xl text-center font-bold mb-5">
+                <h3 className="text-2xl text-center font-bold mb-5">
                   Withdrawal Verification Code
                 </h3>
                 <form onSubmit={handleWithdrawVerify}>
@@ -338,7 +321,7 @@ const PersonalInfo = () => {
                       ref={withdrawRef}
                       type="number"
                       placeholder="New Withdrawal Password"
-                      class="input input-bordered w-full mb-5"
+                      className="input input-bordered w-full mb-5"
                       required
                     />
                   </div>
@@ -347,11 +330,11 @@ const PersonalInfo = () => {
                       ref={verifyRef}
                       type="number"
                       placeholder="Verification Code"
-                      class="input input-bordered w-full"
+                      className="input input-bordered w-full"
                       required
                     />
                   </div>
-                  <div class="form-control mt-6">
+                  <div className="form-control mt-6">
                     <input
                       className="btn btn-primary"
                       type="submit"
@@ -370,16 +353,16 @@ const PersonalInfo = () => {
               >
                 <TbEdit className="text-2xl text-error "></TbEdit>
               </label>
-              <input type="checkbox" id="my-modal-7" class="modal-toggle" />
-              <div class="modal">
-                <div class="modal-box max-w-[600px]">
+              <input type="checkbox" id="my-modal-7" className="modal-toggle" />
+              <div className="modal">
+                <div className="modal-box max-w-[600px]">
                   <label
                     htmlFor="my-modal-7"
                     className="btn btn-sm btn-circle absolute right-2 top-2"
                   >
                     ✕
                   </label>
-                  <h3 class="text-2xl text-center font-bold mb-5">
+                  <h3 className="text-2xl text-center font-bold mb-5">
                     Change USDT Address
                   </h3>
                   <form onSubmit={handleAddress}>
@@ -388,7 +371,7 @@ const PersonalInfo = () => {
                         ref={addressRef}
                         type="number"
                         placeholder="Change your USDT address"
-                        class="input input-bordered w-full mb-5"
+                        className="input input-bordered w-full mb-5"
                         required
                       />
                     </div>
@@ -397,11 +380,11 @@ const PersonalInfo = () => {
                         ref={withdrawalRef}
                         type="number"
                         placeholder="Withdrawal password"
-                        class="input input-bordered w-full "
+                        className="input input-bordered w-full "
                         required
                       />
                     </div>
-                    <div class="form-control mt-6">
+                    <div className="form-control mt-6">
                       <input
                         className="btn btn-primary"
                         type="submit"

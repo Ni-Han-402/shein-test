@@ -11,7 +11,6 @@ const WithdrawChangePassword = () => {
   } = useForm();
   const onSubmit = async (data) => {
     const withPassword = data.withdrawPassword;
-    console.log(withPassword);
     setNewWithPass(withPassword);
     reset();
   };
