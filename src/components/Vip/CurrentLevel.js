@@ -10,7 +10,7 @@ const CurrentLevel = () => {
         <Link to="/">
           <IoIosArrowBack></IoIosArrowBack>
         </Link>
-        <h1 className="text-xl font-bold text-center">VIP</h1>
+        <h1 className="text-xl font-bold text-center">RANK</h1>
       </div>
       <div className="flex justify-between max-w-[600px] md:mx-auto">
         <div className="flex flex-col items-center">
@@ -24,7 +24,7 @@ const CurrentLevel = () => {
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
         <div>
-          <h1 className="text-xl font-medium my-5">Current level - (VIP-1)</h1>
+          <h1 className="text-xl font-medium my-5">Current level - (RANK-1)</h1>
           <div className="card bg-base-200 shadow-xl">
             <div className="card-body">
               <div className="w-24">
@@ -43,7 +43,7 @@ const CurrentLevel = () => {
           </div>
         </div>
         <div>
-          <h1 className="text-xl font-medium my-5">To reach next VIP level</h1>
+          <h1 className="text-xl font-medium my-5">To reach next RANK level</h1>
           <div className="card bg-base-200 shadow-xl">
             <div className="card-body">
               <div className="flex justify-between">

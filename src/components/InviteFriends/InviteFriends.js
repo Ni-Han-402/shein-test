@@ -33,38 +33,65 @@ const InviteFriends = () => {
     return Number.parseFloat(x).toFixed(2);
   };
   return (
-    
+
     <div className="bg-slate-900 ">
-    <div className="container max-w-[1080px] mx-auto p-5">
-      <Link to="/profile" className="btn bg-white text-black rounded-full m-5 hover:bg-slate-300 hover:text-black  " >
-        Back
-      </Link>
-      <div className="mt-48 text-center">
-        <h1 className="text-5xl font-extrabold text-white">Invite A Friend</h1>
-        <h1 className="text-3xl font-bold text-white">to join our family</h1>
-        <p className="my-5">
-          <span className="text-xl text-white">
-            Invitation Code:
-            {Object.entries(dashboardMessagex).length === 0 ? (
-              "user name"
-            ) : (
-              <span>{dashboardMessagex.user[0].invite}</span>
+      <div className="container max-w-[1080px] mx-auto p-5">
+
+        <div className="rounded-xl  p-3 bg-white  flex items-center justify-between">
+          <Link to="/profile" className="btn bg-slate-800 text-white rounded-full  hover:bg-slate-300 hover:text-black  " >
+            Back
+          </Link>
+          <h1 className="text-xl font-bold text-center">Grow your Team</h1>
+        </div>
+
+
+
+        <div className="mt-10 text-center">
+          <h1 className="text-5xl font-extrabold text-white">Invite New Members</h1>
+          <h1 className="text-3xl font-bold text-white">to join your team!</h1>
+          <p className="my-5">
+            <span className="text-xl text-white">
+              Invitation Code:
+              {Object.entries(dashboardMessagex).length === 0 ? (
+                "user name"
+              ) : (
+                <span>{dashboardMessagex.user[0].invite}</span>
+              )}
+            </span>
+          </p>
+          <button
+            className="btn btn-primary rounded-xl"
+            onClick={navigator.clipboard.writeText(
+              Object.entries(dashboardMessagex).length === 0
+                ? "user name"
+                : "http://localhost:3000/register/" +
+                dashboardMessagex.user[0].invite
             )}
-          </span>
-        </p>
-        <button
-          className="btn btn-primary"
-          onClick={navigator.clipboard.writeText(
-            Object.entries(dashboardMessagex).length === 0
-              ? "user name"
-              : "http://localhost:3000/register/" +
-                  dashboardMessagex.user[0].invite
-          )}
-        >
-          Copy link
-        </button>
+          >
+            Copy link
+          </button>
+        </div>
+
+        <div class="card lg:card-side bg-base-100 shadow-xl mt-8 mb-4">
+
+          <div class="card-body">
+
+            <p className="text-xl"> By inviting more members to your team, you will increase your
+              daily profits.</p>
+            <div class="card-actions">
+              <p className="my-2"><span className="font-bold">Layer Two: </span><span>10% of daily profits from members who registered
+                using the referral link of your Layer One members.</span></p>
+              <p className="my-2"><span className="font-bold">Layer Three: </span><span>5% of daily profits from members who registered
+              using the referral link of your Layer Two members.</span></p>
+              <p className="my-2"><span className="font-bold">Layer Four: </span><span>2.5% of daily profits from members who registered
+              using the referral link of your Layer Three members.</span></p>
+              <p className="my-2"><span className="font-bold">Layer Five: </span><span>1% of daily profits from members who registered
+              using the referral link of your Layer Four members.</span></p>
+
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
     </div>
   );
 };

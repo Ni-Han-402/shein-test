@@ -425,7 +425,7 @@ const Home = () => {
           </Link>
           <Link to="/summary"  onClick={window.scrollTo(0, 0)}  className="flex flex-col items-center">
             <img src={vip} alt="" />
-            <h1 className="text-xs md:text-xl">VIP</h1>
+            <h1 className="text-xs md:text-xl">RANK</h1>
           </Link>
           <Link to="/lucky-spin"  onClick={window.scrollTo(0, 0)}  className="flex flex-col items-center">
             <img className="w-11 rounded " src={wheelSpin} alt="" />

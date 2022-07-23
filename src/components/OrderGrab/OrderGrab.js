@@ -7,6 +7,7 @@ import { IoIosArrowBack } from "react-icons/io";
 import { updateSummary } from "../../store/slice";
 import { updateUser } from "../../store/slice";
 import { toast } from 'react-toastify';
+import usdt from "../../images/usdt.png";
 
 const OrderGrab = () => {
   const dispatch = useDispatch();
@@ -190,9 +191,7 @@ const OrderGrab = () => {
                       <p className=" mb-5">
                         Click the "Grab Order" button to get your profits for each order you complete.
                       </p>
-                      <p className=" text-emerald-800 mb-7">
-                        Order grabbing... the result will be shown below
-                      </p>
+                     
                     </div>
                   </div>
                   <div className="card-actions justify-end w-full">
@@ -209,6 +208,10 @@ const OrderGrab = () => {
                       Grab Now
                     </button>
                       :
+                      <>
+                       <p className=" text-emerald-800 mb-7">
+                        Order grabbing... the result will be shown below
+                      </p>
                       <button type="button" className="btn bg-indigo-500 ..." >
                         <svg
                           role="status"
@@ -227,7 +230,7 @@ const OrderGrab = () => {
                           />
                         </svg>
                         Order Placing...
-                      </button>
+                      </button></>
                     }
                   </div>
                 </div>
@@ -237,20 +240,20 @@ const OrderGrab = () => {
             <section className="my-7  py-3 rounded-xl">
               <div>
                 <h2 className="text-center text-xl md:text-3xl lg:text-4xl mb-6 mt-9 bg-gray-900  text-white rounded-lg shadow-xl py-5 font-bold">
-                  Result Today
+                Grab Statistics
                 </h2>
               </div>
 
               <div className="card lg:card-side  shadow-xl bg-slate-300">
                 <div className="stats w-11/12 mx-auto lg:mx-5 md:mx-5 lg:w-5/12 md:w-5/12 my-5 shadow-xl  rounded-lg">
                   <div className="stat overflow-x-hidden">
-                    <div className="stat-title lg:text-base md:text-base text-sm">
-                      Total assests Views
+                    <div className="stat-title lg:text-base md:text-base text-sm text-gray-700">
+                    Total Lifetime Grabs
                     </div>
                     <div className="stat-value lg:text-4xl md:text-3xl text-2xl">
                       {assetStats.total_asset_view}
                     </div>
-                    <div className="stat-desc">Life Time</div>
+                   
                   </div>
                 </div>
 
@@ -258,19 +261,7 @@ const OrderGrab = () => {
                   <div className=" stats stats-vertical lg:stats-horizontal shadow-xl rounded-lg">
                     <div className="stat px-3 md:px-2 lg:px-5">
                       <div className="stat-figure text-secondary">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          className="inline-block w-8 h-8 stroke-current"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                          ></path>
-                        </svg>
+                      
                       </div>
                       <div className="stat-title">Grabbed/ Total</div>
                       <div className="stat-value  lg:text-4xl md:text-3xl text-xl ">
@@ -285,7 +276,7 @@ const OrderGrab = () => {
                           <path stroke-linecap="round" stroke-linejoin="round" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                         </svg>
                       </div>
-                      <div className="stat-title">Promotion bonus</div>
+                      <div className="stat-title"> Team Commission</div>
                       <div className="stat-value  lg:text-4xl md:text-3xl text-xl">
                         {assetStats.today_bonus}
                       </div>
@@ -298,10 +289,10 @@ const OrderGrab = () => {
                           <path stroke-linecap="round" stroke-linejoin="round" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                         </svg>
                       </div>
-                      <div className="stat-title">Profits today</div>
+                      <div className="stat-title">Profits</div>
                       <div className="stat-value  lg:text-4xl md:text-3xl text-xl">
                         <sup>$</sup>
-                        {assetStats.today_profit}
+                        {assetStats.today_profit}  <img className="inline ml-1 h-[20px] w-[20px]"  src={usdt} alt="" />
                       </div>
                       <div className="stat-desc"> Today</div>
                     </div>
@@ -379,9 +370,9 @@ const OrderGrab = () => {
                           Order sent successfully
                         </p>
                         <div className=" my-2 font-bold">
-                          <p className="text-right"> Order left : {grabProducts.left_order}</p>
+                          <p className="text-right"> Orders left : {grabProducts.left_order}</p>
                           <p className="text-left"> Order Price : {grabProducts.data.product.price1 == null ? grabProducts.data.product.price : grabProducts.data.product.price1}</p>
-                          <p className="text-right"> Order Commision : {grabProducts.data.commission}</p>
+                          <p className="text-right"> Order Commision : {grabProducts.data.commission} <img className="inline ml-1 h-[20px] w-[20px]"  src={usdt} alt="" /></p>
 
                         </div>
 

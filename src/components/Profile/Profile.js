@@ -18,6 +18,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { updateDashboardMessage } from "../../store/slice";
 import { authkey } from "../Login/authkey";
 import wheelSpin from "../../images/wheelSpinBgrmv.png";
+import usdt from "../../images/usdt.png";
 
 const Profile = () => {
   const navigate = useNavigate();
@@ -91,7 +92,7 @@ const Profile = () => {
                   }
                 </h2>
                 <p>
-                  Invitation Code:{" "}
+                Membership Level:{" "}
                   {Object.entries(dashboardMessagex).length === 0
                     ? "user name"
                     : dashboardMessagex.user[0].invite}
@@ -110,12 +111,12 @@ const Profile = () => {
           <div className="bg-white w-[90%] mx-auto absolute bottom-0 left-[5%] h-56 rounded-lg">
             <div className="flex flex-col items-center justify-center h-full">
               <h1 className="text-3xl font-bold mb-3 text-slate-900">
-                Account Balance
+              Grab Balance
               </h1>
               <h1 className="text-5xl font-bold text-green-500">
                 {Object.entries(dashboardMessagex).length === 0
                   ? "user name"
-                  : dashboardMessagex.asset}
+                  : dashboardMessagex.asset} <img className="inline ml-1 h-[40px] w-[40px]"  src={usdt} alt="" />
               </h1>
             </div>
           </div>

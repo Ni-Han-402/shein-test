@@ -39,7 +39,7 @@ const Summary = () => {
         <Link to="/profile">
           <IoIosArrowBack></IoIosArrowBack>
         </Link>
-        <h1 className="text-xl font-bold text-center">VIP</h1>
+        <h1 className="text-xl font-bold text-center">RANK</h1>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mt-5">

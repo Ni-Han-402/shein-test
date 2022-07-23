@@ -77,7 +77,7 @@ const RuleDescription = () => {
                       </thead>
                       <tbody>
                         <tr className="hover">
-                          <td className=" pl-5">VIP1</td>
+                          <td className=" pl-5">RANK1</td>
                           <td>
                             76{" "}
                             <sup>
@@ -88,7 +88,7 @@ const RuleDescription = () => {
                         </tr>
 
                         <tr className="hover">
-                          <td className=" pl-5">VIP1 </td>
+                          <td className=" pl-5">RNAK1 </td>
                           <td>
                             76{" "}
                             <sup>
@@ -99,7 +99,7 @@ const RuleDescription = () => {
                         </tr>
 
                         <tr className="hover">
-                          <td className=" pl-5">VIP1</td>
+                          <td className=" pl-5">RANK1</td>
                           <td>
                             76{" "}
                             <sup>
@@ -168,7 +168,7 @@ const RuleDescription = () => {
                   <span>
                     
                       <Link to="/summary"  onClick={window.scrollTo(0, 0)}    className="ml-3   font-bold  link link-primary">
-                 VIP
+                 RANK
                 </Link>
                   
                   </span>
