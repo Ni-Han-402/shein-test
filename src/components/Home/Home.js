@@ -74,9 +74,7 @@ const Home = () => {
   }, []);
 
   const gotoGrabTask = () => {
-    
     navigate("/order-grab", window.scrollTo(0, 0));
-    
   };
   const addLockFund = () => {
     fetch("https://mining-nfts.com/api/", {
@@ -128,10 +126,9 @@ const Home = () => {
       percent = 0;
     }
 
-    setdaily(amountValue / 100 * percent);
-    setmonth(amountValue / 100 * percent * 30);
-    settotal((amountValue / 100 * percent * 30) + (amountValue));
-
+    setdaily((amountValue / 100) * percent);
+    setmonth((amountValue / 100) * percent * 30);
+    settotal((amountValue / 100) * percent * 30 + amountValue);
   };
   const dashboardMessage = useSelector(
     (state) => state.dashboardmessage.message
@@ -143,7 +140,7 @@ const Home = () => {
         <div className="flex justify-center my-2 ">
           <img className="w-[100px]" src={Logo} alt="" />
         </div>
-      
+
         <div className="flex items-center gap-3 my-5">
           <img className="w-14 rounded" src={smallLogo} alt="" />
           <h1>
@@ -165,22 +162,18 @@ const Home = () => {
             <div className="flex justify-between  items-center">
               <div className="flex ">
                 <h1 className="text-sm md:text-xl">Locked asset</h1>
-
-
               </div>
               <div className="flex">
                 <button
                   className=" text-blue-500 border border-blue-500 hover:bg-blue-500 hover:text-white active:bg-blue-600 font-bold uppercase text-xs px-1 pb-0.5 rounded-lg outline-none focus:outline-none mr-1 mb-0 ease-linear transition-all duration-150"
-
-
-                  onClick={showLockFundModal}>
-                  <small>  Add </small>
+                  onClick={showLockFundModal}
+                >
+                  <small> Add </small>
                 </button>
                 <h1 className="text-sm md:text-xl">
                   {format(dashboardMessage.locked_asset)}
                 </h1>
               </div>
-
             </div>
             <div className="flex justify-between">
               <h1 className="text-sm md:text-xl">Today's profits</h1>
@@ -216,7 +209,8 @@ const Home = () => {
                         closeFundModal();
                       }}
                     >
-                      <svg className="font-bold"
+                      <svg
+                        className="font-bold"
                         xmlns="http://www.w3.org/2000/svg"
                         stroke="#0A459F"
                         fill="#000a17"
@@ -252,9 +246,7 @@ const Home = () => {
                         <option value="0" defaultValue>
                           Select Plan
                         </option>
-                        <option value="300" >
-                          300$ return 5.5%
-                        </option>
+                        <option value="300">300$ return 5.5%</option>
                         <option value="500">500$ return 6.5%</option>
                         <option value="1000">1000$ return 7%</option>
                         <option value="1500">1500$ return 7.5%</option>
@@ -280,10 +272,10 @@ const Home = () => {
                           Daily profit: {daily}
                         </h1>
                         <h1 className="text-sm md:text-md mb-2">
-                          30 days profit:  {month}
+                          30 days profit: {month}
                         </h1>
                         <h1 className="text-sm md:text-md mb-2">
-                          Return total after 30 days:  {total}
+                          Return total after 30 days: {total}
                         </h1>
                       </div>
                     </div>
@@ -362,7 +354,7 @@ const Home = () => {
                         xmlns="http://www.w3.org/2000/svg"
                         stroke="#0A459F"
                         fill="#000a17"
-                        stroke-width="0"
+                        strokeWidth="0"
                         viewBox="0 0 24 24"
                         height="1em"
                         width="1em"
@@ -395,43 +387,85 @@ const Home = () => {
           ) : null}
         </div>
         <div className="grid grid-cols-2 gap-5 my-10">
-          <Link to="/deposit"  onClick={window.scrollTo(0, 0)}   className="flex flex-col items-center">
+          <Link
+            to="/deposit"
+            onClick={window.scrollTo(0, 0)}
+            className="flex flex-col items-center"
+          >
             <img src={deposit} alt="" />
             <h1 className="text-xs md:text-xl">Deposit</h1>
           </Link>
-          <Link to="/withdraw"  onClick={window.scrollTo(0, 0)}  className="flex flex-col items-center">
+          <Link
+            to="/withdraw"
+            onClick={window.scrollTo(0, 0)}
+            className="flex flex-col items-center"
+          >
             <img src={withdraw} alt="" />
             <h1 className="text-xs md:text-xl">Withdraw</h1>
           </Link>
-          <Link to="/invite-friends"  onClick={window.scrollTo(0, 0)}  className="flex flex-col items-center">
+          <Link
+            to="/invite-friends"
+            onClick={window.scrollTo(0, 0)}
+            className="flex flex-col items-center"
+          >
             <img src={inviteFriends} alt="" />
             <h1 className="text-xs md:text-xl">Invite friends</h1>
           </Link>
-          <Link to="/team-report/agent"  onClick={window.scrollTo(0, 0)}  className="flex flex-col items-center">
+          <Link
+            to="/team-report/agent"
+            onClick={window.scrollTo(0, 0)}
+            className="flex flex-col items-center"
+          >
             <img src={teamReport} alt="" />
             <h1 className="text-xs md:text-xl">Team report</h1>
           </Link>
-          <Link to="/about"  onClick={window.scrollTo(0, 0)}   className="flex flex-col items-center">
+          <Link
+            to="/about"
+            onClick={window.scrollTo(0, 0)}
+            className="flex flex-col items-center"
+          >
             <img src={aboutUs} alt="" />
             <h1 className="text-xs md:text-xl">About us</h1>
           </Link>
-          <Link to="/rule-description"  onClick={window.scrollTo(0, 0)}  className="flex flex-col items-center">
+          <Link
+            to="/rule-description"
+            onClick={window.scrollTo(0, 0)}
+            className="flex flex-col items-center"
+          >
             <img src={rules} alt="" />
             <h1 className="text-xs md:text-xl">Rules description</h1>
           </Link>
-          <Link to="/promo"  onClick={window.scrollTo(0, 0)}  className="flex flex-col items-center">
+          <Link
+            to="/promo"
+            onClick={window.scrollTo(0, 0)}
+            className="flex flex-col items-center"
+          >
             <img src={promotion} alt="" />
-            <h1 className="text-xs md:text-xl text-center">Promotion description</h1>
+            <h1 className="text-xs md:text-xl text-center">
+              Promotion description
+            </h1>
           </Link>
-          <Link to="/summary"  onClick={window.scrollTo(0, 0)}  className="flex flex-col items-center">
+          <Link
+            to="/summary"
+            onClick={window.scrollTo(0, 0)}
+            className="flex flex-col items-center"
+          >
             <img src={vip} alt="" />
             <h1 className="text-xs md:text-xl">RANK</h1>
           </Link>
-          <Link to="/lucky-spin"  onClick={window.scrollTo(0, 0)}  className="flex flex-col items-center">
+          <Link
+            to="/lucky-spin"
+            onClick={window.scrollTo(0, 0)}
+            className="flex flex-col items-center"
+          >
             <img className="w-11 rounded " src={wheelSpin} alt="" />
             <h1 className="text-xs md:text-xl">Lucky Spin</h1>
           </Link>
-          <Link to="/lock-history"  onClick={window.scrollTo(0, 0)}  className="flex flex-col items-center">
+          <Link
+            to="/lock-history"
+            onClick={window.scrollTo(0, 0)}
+            className="flex flex-col items-center"
+          >
             <img className="w-11 rounded " src={account} alt="" />
             <h1 className="text-xs md:text-xl">Contract history</h1>
           </Link>
@@ -444,7 +478,6 @@ const Home = () => {
               {/*  */}
               <button
                 onClick={gotoGrabTask}
-           
                 className="btn px-8 my-3 py-3 font-bold bg-black text-white rounded focus:outline-none disabled:opacity-75"
               >
                 Start Grabbing
@@ -493,7 +526,9 @@ const Home = () => {
                         <></>
                       )}
                       {task.id == dashboardData.user[0].packid ? (
-                        <button className={`btn-sm md:btn mt-5 lg:btn   bg-success`}>
+                        <button
+                          className={`btn-sm md:btn mt-5 lg:btn   bg-success`}
+                        >
                           <span>Current Level</span>
                         </button>
                       ) : (

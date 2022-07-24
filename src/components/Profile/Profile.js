@@ -92,7 +92,7 @@ const Profile = () => {
                   }
                 </h2>
                 <p>
-                Membership Level:{" "}
+                  Membership Level:{" "}
                   {Object.entries(dashboardMessagex).length === 0
                     ? "user name"
                     : dashboardMessagex.user[0].invite}
@@ -101,9 +101,13 @@ const Profile = () => {
             </div>
             <div className="flex gap-3">
               <div className="indicator">
-                <Link to="/message" >
-                  <span className="indicator-item badge badge-warning rounded-lg">{dashboardMessagex.notify}</span>
-                  <div className="grid  place-items-center"><MdEmail className="w-8 h-8"></MdEmail></div>
+                <Link to="/message">
+                  <span className="indicator-item badge badge-warning rounded-lg">
+                    {dashboardMessagex.notify}
+                  </span>
+                  <div className="grid  place-items-center">
+                    <MdEmail className="w-8 h-8"></MdEmail>
+                  </div>
                 </Link>
               </div>
             </div>
@@ -111,28 +115,48 @@ const Profile = () => {
           <div className="bg-white w-[90%] mx-auto absolute bottom-0 left-[5%] h-56 rounded-lg">
             <div className="flex flex-col items-center justify-center h-full">
               <h1 className="text-3xl font-bold mb-3 text-slate-900">
-              Grab Balance
+                Grab Balance
               </h1>
               <h1 className="text-5xl font-bold text-green-500">
                 {Object.entries(dashboardMessagex).length === 0
                   ? "user name"
-                  : dashboardMessagex.asset} <img className="inline ml-1 h-[40px] w-[40px]"  src={usdt} alt="" />
+                  : dashboardMessagex.asset}{" "}
+                <img
+                  className="inline ml-1 h-[40px] w-[40px]"
+                  src={usdt}
+                  alt=""
+                />
               </h1>
             </div>
           </div>
         </div>
 
-        <a target="_blank" rel="noopener noreferrer" href="https://support.farfetchedgrab.com/" ><div className="w-[90%] mx-auto bg-base-200 mt-5 p-5 rounded-lg flex justify-between">
-          <div className="flex gap-5 items-center">
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-              <path strokeLinecap="round" strokeLinejoin="round" d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z" />
-            </svg>  <span>Contact Customer Support </span>
-            
-           
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://support.farfetchedgrab.com/"
+        >
+          <div className="w-[90%] mx-auto bg-base-200 mt-5 p-5 rounded-lg flex justify-between">
+            <div className="flex gap-5 items-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                strokeWidth={2}
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z"
+                />
+              </svg>{" "}
+              <span>Contact Customer Support </span>
+            </div>
+            <AiOutlineArrowRight></AiOutlineArrowRight>
           </div>
-          <AiOutlineArrowRight></AiOutlineArrowRight>
-        </div></a>
-
+        </a>
 
         <div className="w-[90%] mx-auto bg-base-200 m-5 mb-24 p-5 grid grid-cols-2 md:grid-cols-5 gap-5 rounded-lg">
           <Link to="/personal-info" className="flex flex-col items-center">
@@ -169,7 +193,6 @@ const Profile = () => {
             <h1>Message</h1>
           </Link>
 
-
           <Link to="/invite-friends" className="flex flex-col items-center">
             <img src={inviteFriends} alt="" />
             <h1>Invite friends</h1>
@@ -181,7 +204,10 @@ const Profile = () => {
             <h1 className="">Lucky Spin</h1>
           </Link>
 
-          <Link to="/lock-history" className="flex flex-col justify-center items-center">
+          <Link
+            to="/lock-history"
+            className="flex flex-col justify-center items-center"
+          >
             <img src={account} alt="" />
             <h1>Contract history</h1>
           </Link>
@@ -195,11 +221,11 @@ const Profile = () => {
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
-              stroke-width="2"
+              strokeWidth="2"
             >
               <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeLinecap="round"
+                strokeLinejoin="round"
                 d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"
               />
             </svg>

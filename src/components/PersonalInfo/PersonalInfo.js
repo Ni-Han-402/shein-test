@@ -83,7 +83,6 @@ const PersonalInfo = () => {
           }
         });
     } else {
-
     }
   };
   const handleWithdrawVerify = (e) => {
@@ -104,13 +103,12 @@ const PersonalInfo = () => {
       })
         .then((res) => res.json())
         .then((data) => {
-          if (data.status == 200) {          
+          if (data.status == 200) {
             toast.success(data.message);
             navigate("/profile");
-          } 
+          }
         });
     } else {
-     
     }
   };
   const handleAddress = (e) => {
@@ -132,13 +130,10 @@ const PersonalInfo = () => {
       })
         .then((res) => res.json())
         .then((data) => {
-        
-
           if (data.status == 200) {
-         
             toast.success(data.message);
             navigate("/profile");
-          }  
+          }
         });
     }
   };
@@ -189,7 +184,7 @@ const PersonalInfo = () => {
             <div className="flex justify-between">
               <h1>Change Login Password</h1>
               <label
-                htmlFor="my-modal-3"
+                htmlhtmlFor="my-modal-3"
                 className="btn modal-button btn-ghost"
               >
                 <TbEdit className="text-2xl text-error "></TbEdit>
@@ -199,7 +194,7 @@ const PersonalInfo = () => {
               <div className="modal p-5">
                 <div className="modal-box relative">
                   <label
-                    htmlFor="my-modal-3"
+                    htmlhtmlFor="my-modal-3"
                     className="btn btn-sm btn-circle absolute right-2 top-2"
                   >
                     ✕
@@ -209,12 +204,12 @@ const PersonalInfo = () => {
                   </h1>
                   <p className="mt-10">Do you want to proceed?</p>
                   <div className="flex gap-5 mt-5">
-                    <label htmlFor="my-modal-3" className="btn btn-error">
+                    <label htmlhtmlFor="my-modal-3" className="btn btn-error">
                       NO
                     </label>
                     <label
                       onClick={handleVerify}
-                      for="my-modal-4"
+                      htmlFor="my-modal-4"
                       className="btn btn-primary"
                     >
                       YES
@@ -224,10 +219,10 @@ const PersonalInfo = () => {
               </div>
             </div>
             <input type="checkbox" id="my-modal-4" className="modal-toggle" />
-            <label for="my-modal-4" className="modal cursor-pointer">
-              <label className="modal-box relative" for="">
+            <label htmlFor="my-modal-4" className="modal cursor-pointer">
+              <label className="modal-box relative" htmlFor="">
                 <label
-                  htmlFor="my-modal-4"
+                  htmlhtmlFor="my-modal-4"
                   className="btn btn-sm btn-circle absolute right-2 top-2"
                 >
                   ✕
@@ -271,7 +266,10 @@ const PersonalInfo = () => {
 
             <div className="flex justify-between">
               <h1>Change Withdrawal Password</h1>
-              <label htmlFor="my-modal" className="btn modal-button btn-ghost">
+              <label
+                htmlhtmlFor="my-modal"
+                className="btn modal-button btn-ghost"
+              >
                 <TbEdit className="text-2xl text-error "></TbEdit>
               </label>
 
@@ -279,7 +277,7 @@ const PersonalInfo = () => {
               <div className="modal">
                 <div className="modal-box">
                   <label
-                    htmlFor="my-modal"
+                    htmlhtmlFor="my-modal"
                     className="btn btn-sm btn-circle absolute right-2 top-2"
                   >
                     ✕
@@ -289,12 +287,12 @@ const PersonalInfo = () => {
                   </h1>
                   <p className="mt-10">Do you want to proceed?</p>
                   <div className="flex gap-5 mt-5">
-                    <label htmlFor="my-modal" className="btn btn-error">
+                    <label htmlhtmlFor="my-modal" className="btn btn-error">
                       NO
                     </label>
                     <label
                       onClick={handleVerify}
-                      for="my-modal-6"
+                      htmlFor="my-modal-6"
                       className="btn btn-primary"
                     >
                       YES
@@ -307,7 +305,7 @@ const PersonalInfo = () => {
             <div className="modal modal-bottom sm:modal-middle">
               <div className="modal-box">
                 <label
-                  htmlFor="my-modal-6"
+                  htmlhtmlFor="my-modal-6"
                   className="btn btn-sm btn-circle absolute right-2 top-2"
                 >
                   ✕
@@ -348,7 +346,7 @@ const PersonalInfo = () => {
             <div className="flex justify-between">
               <h1>Change USDT Address</h1>
               <label
-                htmlFor="my-modal-7"
+                htmlhtmlFor="my-modal-7"
                 className="btn modal-button btn-ghost"
               >
                 <TbEdit className="text-2xl text-error "></TbEdit>
@@ -357,7 +355,7 @@ const PersonalInfo = () => {
               <div className="modal">
                 <div className="modal-box max-w-[600px]">
                   <label
-                    htmlFor="my-modal-7"
+                    htmlhtmlFor="my-modal-7"
                     className="btn btn-sm btn-circle absolute right-2 top-2"
                   >
                     ✕
